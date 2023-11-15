@@ -4,22 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/swing/ComponentResizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="Add ComponentResizer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -61,19 +59,6 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
-      <module name="chart-application5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.raven.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="chat" />
       <method v="2">
@@ -87,11 +72,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,10 +82,21 @@
       <option name="presentableId" value="Default" />
       <updated>1698066362005</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add ComponentResizer">
+      <option name="closed" value="true" />
+      <created>1700044680471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700044680471</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add ComponentResizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ComponentResizer" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
