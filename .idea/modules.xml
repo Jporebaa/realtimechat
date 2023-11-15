@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/realtimechat.iml" filepath="$PROJECT_DIR$/.idea/realtimechat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 15/chart-application/chart-application.iml" filepath="$PROJECT_DIR$/part 15/chart-application/chart-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 22/chart-application/chart-application1.iml" filepath="$PROJECT_DIR$/part 22/chart-application/chart-application1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 18-19/chart-application/chart-application10.iml" filepath="$PROJECT_DIR$/part 18-19/chart-application/chart-application10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 12/chart-application/chart-application2.iml" filepath="$PROJECT_DIR$/part 12/chart-application/chart-application2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 13/chart-application/chart-application3.iml" filepath="$PROJECT_DIR$/part 13/chart-application/chart-application3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 20/chart-application/chart-application4.iml" filepath="$PROJECT_DIR$/part 20/chart-application/chart-application4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 23/chart-application/chart-application5.iml" filepath="$PROJECT_DIR$/part 23/chart-application/chart-application5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 16/chart-application/chart-application6.iml" filepath="$PROJECT_DIR$/part 16/chart-application/chart-application6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 21/chart-application/chart-application7.iml" filepath="$PROJECT_DIR$/part 21/chart-application/chart-application7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 14/chart-application/chart-application8.iml" filepath="$PROJECT_DIR$/part 14/chart-application/chart-application8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 17/chart-application/chart-application9.iml" filepath="$PROJECT_DIR$/part 17/chart-application/chart-application9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-swing-chat-application.iml" filepath="$PROJECT_DIR$/.idea/java-swing-chat-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 1/part 1.iml" filepath="$PROJECT_DIR$/part 1/part 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 10/part 10.iml" filepath="$PROJECT_DIR$/part 10/part 10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 11/part 11.iml" filepath="$PROJECT_DIR$/part 11/part 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 2/part 2.iml" filepath="$PROJECT_DIR$/part 2/part 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 3/part 3.iml" filepath="$PROJECT_DIR$/part 3/part 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 4/part 4.iml" filepath="$PROJECT_DIR$/part 4/part 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 5/part 5.iml" filepath="$PROJECT_DIR$/part 5/part 5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 6/part 6.iml" filepath="$PROJECT_DIR$/part 6/part 6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 7/part 7.iml" filepath="$PROJECT_DIR$/part 7/part 7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 8/part 8.iml" filepath="$PROJECT_DIR$/part 8/part 8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 9/part 9.iml" filepath="$PROJECT_DIR$/part 9/part 9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 23/server/server.iml" filepath="$PROJECT_DIR$/part 23/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 15/server/server1.iml" filepath="$PROJECT_DIR$/part 15/server/server1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 18-19/server/server10.iml" filepath="$PROJECT_DIR$/part 18-19/server/server10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 16/server/server2.iml" filepath="$PROJECT_DIR$/part 16/server/server2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 14/server/server3.iml" filepath="$PROJECT_DIR$/part 14/server/server3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 12/server/server4.iml" filepath="$PROJECT_DIR$/part 12/server/server4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 17/server/server5.iml" filepath="$PROJECT_DIR$/part 17/server/server5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 13/server/server6.iml" filepath="$PROJECT_DIR$/part 13/server/server6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 20/server/server7.iml" filepath="$PROJECT_DIR$/part 20/server/server7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 22/server/server8.iml" filepath="$PROJECT_DIR$/part 22/server/server8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part 21/server/server9.iml" filepath="$PROJECT_DIR$/part 21/server/server9.iml" />
     </modules>
   </component>
 </project>
