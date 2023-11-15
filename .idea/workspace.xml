@@ -5,98 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/box.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/box_selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/double_tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/group.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/group_selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/login_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/message_selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/minimize.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/more_disable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/send.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/testing/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/testing/dog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/testing/pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ActiveStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ComponentResizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ImageAvatar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/JIMSendTextPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ModernScrollBarUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PanelSlide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PictureBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Progress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ProgressCircleUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ScrollBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/WrapLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/blurHash/Base83.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/blurHash/BlurHash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/blurHash/SRGB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/blurHash/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/swing/ComponentResizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/realtimechat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UndecoratedExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/.idea/realtimechat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$BorderPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$BorderPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$BorderPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$BorderPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$MainPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample$OutsidePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/UndecoratedExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application1/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application10/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application2/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application3/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application4/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application5/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application6/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application7/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application8/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/chart-application9/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/part 10/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/part 11/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/part 7/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/part 8/testing/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/part 9/testing/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -113,23 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakub/IdeaProjects/ops&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/jakub/IdeaProjects/Project1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;XML&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "XML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
