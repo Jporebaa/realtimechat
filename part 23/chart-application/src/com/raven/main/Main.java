@@ -25,7 +25,6 @@ public class Main extends javax.swing.JFrame {
         com.setSnapSize(new Dimension(10, 10));
     }
 
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -157,23 +156,25 @@ public class Main extends javax.swing.JFrame {
     private int pY;
     private void titleMouseDragged(java.awt.event.MouseEvent evt) {
         this.setLocation(this.getLocation().x + evt.getX() - pX, this.getLocation().y + evt.getY() - pY);
-    }
+    }//GEN-LAST:event_titleMouseDragged
 
     private void titleMousePressed(java.awt.event.MouseEvent evt) {
         pX = evt.getX();
         pY = evt.getY();
-    }
+    }//GEN-LAST:event_titleMousePressed
 
     private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {
         System.exit(0);
-    }
+    }//GEN-LAST:event_cmdCloseActionPerformed
 
     private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {
         this.setState(JFrame.ICONIFIED);
     }
-
-
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
+
 
 
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -182,7 +183,6 @@ public class Main extends javax.swing.JFrame {
             }
         });
     }
-
 
     private javax.swing.JPanel background;
     private javax.swing.JLayeredPane body;

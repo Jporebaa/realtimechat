@@ -1,5 +1,4 @@
-package com.raven.main.form;
-
+package com.raven.form;
 
 import com.raven.component.Item_People;
 import net.miginfocom.swing.MigLayout;
@@ -8,12 +7,23 @@ public class Menu_Left extends javax.swing.JPanel {
 
     public Menu_Left() {
         initComponents();
-
+        init();
     }
 
+    private void init() {
+        menuList.setLayout(new MigLayout("fillx", "0[]0", "1[]1"));
+        showPeople();
+    }
+
+    private void showPeople() {
+
+        for (int i = 0; i < 8; i++) {
+        //    menuList.add(new Item_People("People " + i), "wrap");
+        }
+    }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+
     private void initComponents() {
 
         menu = new javax.swing.JLayeredPane();
@@ -67,6 +77,9 @@ public class Menu_Left extends javax.swing.JPanel {
                                 .addContainerGap())
         );
     }
+
+
+
     private javax.swing.JLayeredPane menu;
     private com.raven.component.MenuButton menuButton1;
     private com.raven.component.MenuButton menuButton2;

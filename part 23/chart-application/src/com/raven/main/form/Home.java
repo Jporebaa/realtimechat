@@ -22,12 +22,12 @@ public class Home extends javax.swing.JLayeredPane {
     }
 
     public void setUser(Model_User_Account user) {
-        chat.setUser(user);
+       // chat.setUser(user);
         chat.setVisible(true);
     }
 
     public void updateUser(Model_User_Account user) {
-        chat.updateUser(user);
+     //   chat.updateUser(user);
     }
 
     @SuppressWarnings("unchecked")
