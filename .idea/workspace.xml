@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="Create SimplyTemplate">
+    <list default="true" id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="Create Left_menubar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Right.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Chat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Right.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700157837740</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create Left_menubar">
+      <option name="closed" value="true" />
+      <created>1700158512415</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700158512415</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,7 +152,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create SimplyTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create SimplyTemplate" />
+    <MESSAGE value="Create Left_menubar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Left_menubar" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
