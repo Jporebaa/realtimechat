@@ -35,5 +35,5 @@ public class Menu_Right extends javax.swing.JPanel {
         );
     }
     private javax.swing.JLabel jLabel1;
-
+//3423432
 }
