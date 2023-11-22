@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
+    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Creeate MenuButtons">
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/component/MenuButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/box_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/group_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/message.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/message_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/minimize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/icon/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/form/Menu_Left.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="1-updatereadmefile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,11 +43,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2XAKI7kNu6HCNyJgvMSvmCZXLv0" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="2X3sN0AxYHmQYdfQ2j6FdJaWaXD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -41,21 +59,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakub/IdeaProjects/Project1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1-updatereadmefile&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakub/IdeaProjects/java-swing-chat-application&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;XML&quot;
-    ]
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michal_Mordarski\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\main\icon" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
@@ -71,13 +90,11 @@
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="chat" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="chat" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,30 +103,43 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="" />
-      <created>1698066362005</created>
+      <changelist id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="" />
+      <created>1697869053917</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698066362005</updated>
+      <updated>1697869053917</updated>
     </task>
-
+    <task id="LOCAL-00001" summary="UpdateReadmeFile">
+      <option name="closed" value="true" />
+      <created>1697870567804</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697870567804</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.raven.main.*</FILTER>
-    </SUITE>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UpdateReadmeFile" />
+    <MESSAGE value="Creeate MenuButtons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creeate MenuButtons" />
   </component>
 </project>

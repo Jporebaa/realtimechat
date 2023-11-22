@@ -38,13 +38,13 @@ public class Menu_Left extends javax.swing.JPanel {
         menu.setOpaque(true);
         menu.setLayout(new javax.swing.BoxLayout(menu, javax.swing.BoxLayout.LINE_AXIS));
 
-        menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/message_selected.png"))); // NOI18N
+        menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/main/icon/message.png"))); // NOI18N
         menu.add(menuButton1);
 
-        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/group.png"))); // NOI18N
+        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/main/icon/group.png"))); // NOI18N
         menu.add(menuButton2);
 
-        menuButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/box.png"))); // NOI18N
+        menuButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/main/icon/box.png"))); // NOI18N
         menu.add(menuButton3);
 
         javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
