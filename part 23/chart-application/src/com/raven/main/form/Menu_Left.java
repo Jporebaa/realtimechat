@@ -1,4 +1,4 @@
-package com.raven.form;
+package com.raven.main.form;
 
 import com.raven.component.Item_People;
 import net.miginfocom.swing.MigLayout;
@@ -16,9 +16,9 @@ public class Menu_Left extends javax.swing.JPanel {
     }
 
     private void showPeople() {
-
+        //  test data
         for (int i = 0; i < 8; i++) {
-        //    menuList.add(new Item_People("People " + i), "wrap");
+            menuList.add(new Item_People("People " + i), "wrap");
         }
     }
 
