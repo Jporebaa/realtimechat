@@ -194,7 +194,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="com.raven.form.Home" name="home">
+                <Component class="form.com.raven.Home" name="home">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                       <CardConstraints cardName="card2"/>

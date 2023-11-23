@@ -1,6 +1,7 @@
 package com.raven.form;
 
 import com.raven.component.Item_People;
+import com.raven.model.Model_User_Account;
 import net.miginfocom.swing.MigLayout;
 
 public class Menu_Left extends javax.swing.JPanel {
@@ -16,9 +17,10 @@ public class Menu_Left extends javax.swing.JPanel {
     }
 
     private void showPeople() {
-
+        //  test data
+        Model_User_Account user = new Model_User_Account(1, "user", "male", "whdbhwdfw", false);
         for (int i = 0; i < 8; i++) {
-        //    menuList.add(new Item_People("People " + i), "wrap");
+            menuList.add(new Item_People(user), "wrap");
         }
     }
 
@@ -38,13 +40,13 @@ public class Menu_Left extends javax.swing.JPanel {
         menu.setOpaque(true);
         menu.setLayout(new javax.swing.BoxLayout(menu, javax.swing.BoxLayout.LINE_AXIS));
 
-        menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/main/icon/message.png"))); // NOI18N
+        menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/message.png"))); // NOI18N
         menu.add(menuButton1);
 
-        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/main/icon/group.png"))); // NOI18N
+        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/group.png"))); // NOI18N
         menu.add(menuButton2);
 
-        menuButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/main/icon/box.png"))); // NOI18N
+        menuButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/box.png"))); // NOI18N
         menu.add(menuButton3);
 
         javax.swing.GroupLayout menuListLayout = new javax.swing.GroupLayout(menuList);
