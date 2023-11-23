@@ -1,4 +1,4 @@
-package com.raven.main.component;
+package com.raven.component;
 
 import javax.swing.*;
 
