@@ -4,6 +4,9 @@
       <root url="jar://$PROJECT_DIR$/part 23/chart-application/dist/chart-application.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/part 23/chart-application/src" />
+      <root url="file://$PROJECT_DIR$/part 23/chart-application/test" />
+    </SOURCES>
   </library>
 </component>
