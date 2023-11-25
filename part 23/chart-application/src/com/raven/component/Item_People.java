@@ -17,11 +17,15 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class Item_People extends JPanel {
     private boolean mouseOver;
-    private final Model_User_Account user;
+    private Model_User_Account user;
     private ActiveStatus activeStatus;
     private ImageAvatar imageAvatar1;
     private JLabel lb;
     private JLabel lbStatus;
+
+    public Item_People(String s) {
+
+    }
 
     public Model_User_Account getUser() {
         return this.user;

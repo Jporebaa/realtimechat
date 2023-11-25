@@ -4,71 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a089091-5851-4b2f-9640-db87df332c83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ModernScrollBarUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ScrollBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1a089091-5851-4b2f-9640-db87df332c83" name="Changes" comment="Left Menu Bar #1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/MenuButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Left.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/box_selected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/group.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/group_selected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/message.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/message_selected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/minimize.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/form/Menu_Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/form/Menu_Right.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ComponentResizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ComponentResizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/app/MessageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/connection/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/main/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/main/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_File_Receiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_File_Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Package_Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Receive_Image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Receive_Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Register.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Reques_File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_Send_Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/model/Model_User_Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/ServiceFIle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/service/ServiceUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/swing/blurHash/Base83.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/swing/blurHash/BlurHash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/swing/blurHash/SRGB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/com/raven/swing/blurHash/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/MenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/MenuButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ComponentResizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ComponentResizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ImageAvatar.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ImageAvatar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Item_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Item_People.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,24 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/jakub/IdeaProjects/Project1",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakub/IdeaProjects/Project1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "XML"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;XML&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
@@ -161,16 +99,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6344dcab-329b-4efb-9893-f8c103cd9a1c" name="Changes" comment="" />
+      <changelist id="1a089091-5851-4b2f-9640-db87df332c83" name="Changes" comment="" />
       <created>1698066362005</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698066362005</updated>
     </task>
+    <task id="LOCAL-00001" summary="Left Menu Bar #1">
+      <option name="closed" value="true" />
+      <created>1700948355774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700948355774</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Left Menu Bar #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Left Menu Bar #1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
