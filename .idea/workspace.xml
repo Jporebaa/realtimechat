@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a089091-5851-4b2f-9640-db87df332c83" name="Changes" comment="Left Menu Bar #1">
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
