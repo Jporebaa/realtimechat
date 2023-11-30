@@ -1,4 +1,3 @@
-
 package com.raven.main;
 
 import com.raven.swing.ComponentResizer;
@@ -9,7 +8,6 @@ import javax.swing.JFrame;
 
 
 public class Main extends javax.swing.JFrame {
-
 
     public Main() {
         initComponents();
@@ -26,7 +24,6 @@ public class Main extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-
     private void initComponents() {
 
         border = new javax.swing.JPanel();
@@ -162,7 +159,6 @@ public class Main extends javax.swing.JFrame {
         pX = evt.getX();
         pY = evt.getY();
     }
-
     private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {
         System.exit(0);
     }
@@ -172,8 +168,22 @@ public class Main extends javax.swing.JFrame {
     }
 
     public static void main(String args[]) {
-
-
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -189,5 +199,4 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton cmdMinimize;
     private com.raven.form.Home home1;
     private javax.swing.JPanel title;
-
 }
