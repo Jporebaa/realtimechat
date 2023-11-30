@@ -26,8 +26,21 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         layer.setBorder(new EmptyBorder(0,5,10,5));
         label = new JLabel(time);
         label.setForeground(new Color(110,110,110));
+        label.setHorizontalTextPosition(JLabel.LEFT);
         layer.add(label);
         add(layer);
+    }
+
+    public void sendSuccess() {
+        if (label != null) {
+            label.setIcon(new ImageIcon(getClass().getResource("/com/raven/icon/tick.png")));
+        }
+    }
+
+    public void seen() {
+        if (label != null) {
+            label.setIcon(new ImageIcon(getClass().getResource("/com/raven/icon/double_tick.png")));
+        }
     }
 
 
