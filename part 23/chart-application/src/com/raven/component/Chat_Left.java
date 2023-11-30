@@ -11,6 +11,7 @@ public class Chat_Left extends javax.swing.JLayeredPane {
 
     public void setText(String text) {
         txt.setText(text);
+        txt.setTime("10:00 PM"); 
     }
 
     @SuppressWarnings("unchecked")

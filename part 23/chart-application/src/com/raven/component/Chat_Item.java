@@ -1,11 +1,12 @@
 package com.raven.component;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 
 public class Chat_Item extends javax.swing.JLayeredPane {
+
+    private JLabel label;
 
     public Chat_Item() {
         initComponents();
@@ -19,6 +20,16 @@ public class Chat_Item extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
+    public void setTime(String time){
+        JLayeredPane layer = new JLayeredPane();
+        layer.setLayout(new FlowLayout(FlowLayout.RIGHT,0,0));
+        layer.setBorder(new EmptyBorder(0,5,10,5));
+        label = new JLabel(time);
+        label.setForeground(new Color(110,110,110));
+        layer.add(label);
+        add(layer);
+    }
+
 
     private void initComponents() {
 
