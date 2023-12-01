@@ -11,10 +11,12 @@ public class Chat_Body extends javax.swing.JPanel {
         init();
         addItemRight("Test wyświetlania wiadomości.");
         addItemRight("test\nCześć");
-        addItemLeft("Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości.");
-        addItemLeft("test\ntestest\ntestest");
+        addItemLeft("Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości.","Test");
+        addDate("01/12/2023");
+        addItemLeft("test\ntestest\ntestest","Ania");
         addItemRight("test\ntestest\ntestest");
-        addItemLeft("test\ntestest\ntestest");
+        addItemLeft("test\ntestest\ntestest","Kazimierz");
+        addDate("Dzisiaj");
         addItemRight("test\ntestest\ntestest");
 
     }
@@ -25,11 +27,11 @@ public class Chat_Body extends javax.swing.JPanel {
         sp.getVerticalScrollBar().setBackground(Color.WHITE);
     }
 
-    public void addItemLeft(String text) {
-        Chat_Left item = new Chat_Left();
+    public void addItemLeft(String text, String user) {
+        Chat_Left_With_Profile item = new Chat_Left_With_Profile();
         item.setText(text);
-        body.add(item, "wrap, w ::80%");
-
+        item.setUserProfile(user);
+        body.add(item, "wrap, w 100::80%");
         body.repaint();
         body.revalidate();
     }
@@ -37,13 +39,17 @@ public class Chat_Body extends javax.swing.JPanel {
     public void addItemRight(String text) {
         Chat_Right item = new Chat_Right();
         item.setText(text);
-        body.add(item, "wrap, al right, w ::80%");
-
+        body.add(item, "wrap, al right, w 100::80%");
         body.repaint();
         body.revalidate();
     }
-
-    @SuppressWarnings("unchecked")
+    public void addDate(String date){
+        Chat_Date item=new Chat_Date();
+        item.setDate(date);
+        body.add(item,"wrap, al center");
+        body.repaint();
+        body.revalidate();
+    }
 
     private void initComponents() {
 

@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="#46 - dodanie i konfiguracja ikon zwiazanych z poprawna wysyłka wiadomosci">
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Left_With_Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/test/dog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Right.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Title.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Title.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +34,24 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1-updatereadmefile" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Dziki00"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ba012117-b332-4cca-a7b9-9dbe5ae53662" />
+        <option name="url" value="https://github.com/Jporebaa/realtimechat.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +64,7 @@
 }</component>
   <component name="ProjectId" id="2X3sN0AxYHmQYdfQ2j6FdJaWaXD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -61,6 +86,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\component" />
+      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\icon\test" />
       <recent name="C:\Users\Michal_Mordarski\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\main\icon" />
     </key>
   </component>
@@ -148,6 +175,16 @@
     <MESSAGE value="setTime (dodanie daty wysyłki wiadomości)" />
     <MESSAGE value="#46 - dodanie i konfiguracja ikon zwiazanych z poprawna wysyłka wiadomosci" />
     <option name="LAST_COMMIT_MESSAGE" value="#46 - dodanie i konfiguracja ikon zwiazanych z poprawna wysyłka wiadomosci" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/build/classes/com/raven/component/Chat_Left_With_Profile.class</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
