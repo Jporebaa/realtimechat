@@ -1,5 +1,6 @@
 package com.raven.component;
 
+import javax.swing.*;
 import java.awt.Color;
 
 public class Chat_Right extends javax.swing.JLayeredPane {
@@ -10,10 +11,22 @@ public class Chat_Right extends javax.swing.JLayeredPane {
     }
 
     public void setText(String text) {
-        txt.setText(text);
-        txt.setTime("10:08 PM");
+        if (text.equals("")) {
+            txt.hideText();
+        } else {
+            txt.setText(text);
+        }
         txt.seen();
     }
+
+    public void setImage(Icon... image) {
+        txt.setImage(true, image);
+    }
+
+    public void setTime() {
+        txt.setTime("10:30 PM");    //  Testing
+    }
+
 
     @SuppressWarnings("unchecked")
 

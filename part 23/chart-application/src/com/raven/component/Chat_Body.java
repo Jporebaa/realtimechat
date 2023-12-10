@@ -2,6 +2,8 @@ package com.raven.component;
 
 import com.raven.swing.ScrollBar;
 import java.awt.Color;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import net.miginfocom.swing.MigLayout;
 
 public class Chat_Body extends javax.swing.JPanel {
@@ -11,11 +13,11 @@ public class Chat_Body extends javax.swing.JPanel {
         init();
         addItemRight("Test wyświetlania wiadomości.");
         addItemRight("test\nCześć");
-        addItemLeft("Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości.","Test");
+        addItemLeft("Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości.","Test", new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
         addDate("01/12/2023");
         addItemLeft("test\ntestest\ntestest","Ania");
-        addItemRight("test\ntestest\ntestest");
-        addItemLeft("test\ntestest\ntestest","Kazimierz");
+        addItemRight("test\ntestest\ntestest",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
+        addItemLeft("","Kazimierz",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
         addDate("Dzisiaj");
         addItemRight("test\ntestest\ntestest");
 
@@ -27,18 +29,21 @@ public class Chat_Body extends javax.swing.JPanel {
         sp.getVerticalScrollBar().setBackground(Color.WHITE);
     }
 
-    public void addItemLeft(String text, String user) {
+    public void addItemLeft(String text, String user, Icon ...image) {
         Chat_Left_With_Profile item = new Chat_Left_With_Profile();
         item.setText(text);
+        item.setImage(image);
+        item.setTime();
         item.setUserProfile(user);
         body.add(item, "wrap, w 100::80%");
         body.repaint();
         body.revalidate();
     }
 
-    public void addItemRight(String text) {
+    public void addItemRight(String text, Icon... image) {
         Chat_Right item = new Chat_Right();
         item.setText(text);
+        item.setImage(image);
         body.add(item, "wrap, al right, w 100::80%");
         body.repaint();
         body.revalidate();
