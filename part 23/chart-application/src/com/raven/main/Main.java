@@ -1,11 +1,13 @@
 package com.raven.main;
 
+import com.raven.event.EventImageView;
+import com.raven.event.PublicEvent;
 import com.raven.swing.ComponentResizer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-
 
 public class Main extends javax.swing.JFrame {
 
@@ -21,9 +23,28 @@ public class Main extends javax.swing.JFrame {
         com.setMinimumSize(new Dimension(800, 500));
         com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());
         com.setSnapSize(new Dimension(10, 10));
+        vIew_Image.setVisible(false);
+        home.setVisible(true);
+        initEvent();
+    }
+
+    private void initEvent() {
+        PublicEvent.getInstance().addEventImageView(new EventImageView() {
+            @Override
+            public void viewImage(Icon image) {
+                vIew_Image.viewImage(image);
+            }
+
+            @Override
+            public void saveImage(Icon image) {
+                System.out.println("Save Image next update");
+            }
+
+        });
     }
 
     @SuppressWarnings("unchecked")
+
     private void initComponents() {
 
         border = new javax.swing.JPanel();
@@ -32,7 +53,8 @@ public class Main extends javax.swing.JFrame {
         cmdMinimize = new javax.swing.JButton();
         cmdClose = new javax.swing.JButton();
         body = new javax.swing.JLayeredPane();
-        home1 = new com.raven.form.Home();
+        vIew_Image = new com.raven.form.VIew_Image();
+        home = new com.raven.form.Home();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -94,8 +116,10 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(0, 0, 0))
         );
 
-        body.setLayout(new java.awt.BorderLayout());
-        body.add(home1, java.awt.BorderLayout.CENTER);
+        body.setLayout(new java.awt.CardLayout());
+        body.setLayer(vIew_Image, javax.swing.JLayeredPane.POPUP_LAYER);
+        body.add(vIew_Image, "card3");
+        body.add(home, "card2");
 
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);
@@ -151,19 +175,20 @@ public class Main extends javax.swing.JFrame {
 
     private int pX;
     private int pY;
-    private void titleMouseDragged(java.awt.event.MouseEvent evt) {
+    private void titleMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseDragged
         this.setLocation(this.getLocation().x + evt.getX() - pX, this.getLocation().y + evt.getY() - pY);
     }
 
-    private void titleMousePressed(java.awt.event.MouseEvent evt) {
+    private void titleMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMousePressed
         pX = evt.getX();
         pY = evt.getY();
     }
-    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {
+
+    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCloseActionPerformed
         System.exit(0);
     }
 
-    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {
+    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMinimizeActionPerformed
         this.setState(JFrame.ICONIFIED);
     }
 
@@ -197,6 +222,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel border;
     private javax.swing.JButton cmdClose;
     private javax.swing.JButton cmdMinimize;
-    private com.raven.form.Home home1;
+    private com.raven.form.Home home;
     private javax.swing.JPanel title;
+    private com.raven.form.VIew_Image vIew_Image;
 }
