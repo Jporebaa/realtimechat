@@ -15,6 +15,8 @@ public class Chat_Body extends javax.swing.JPanel {
         addItemRight("test\nCześć");
         addItemLeft("Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości.","Test", new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
         addDate("01/12/2023");
+        String img[] = {"LRMj,K-:?G9G_JIon}WqD~ITRPs,", "LCGlO@00.R~o.9DOO[%L02?aJ7D*"};
+        addItemLeft("hello\nerererew\newewe", "Dara", img);
         addItemLeft("test\ntestest\ntestest","Ania");
         addItemRight("test\ntestest\ntestest",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
         addItemLeft("","Kazimierz",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
@@ -40,6 +42,16 @@ public class Chat_Body extends javax.swing.JPanel {
         body.revalidate();
     }
 
+    public void addItemLeft(String text, String user, String[] image) {
+        Chat_Left_With_Profile item = new Chat_Left_With_Profile();
+        item.setText(text);
+        item.setImage(image);
+        item.setTime();
+        item.setUserProfile(user);
+        body.add(item, "wrap, w 100::80%");
+        body.repaint();
+        body.revalidate();
+    }
     public void addItemRight(String text, Icon... image) {
         Chat_Right item = new Chat_Right();
         item.setText(text);
