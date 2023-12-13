@@ -22,6 +22,8 @@ public class Chat_Body extends javax.swing.JPanel {
         addItemLeft("","Kazimierz",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
         addDate("Dzisiaj");
         addItemRight("test\ntestest\ntestest");
+        addItemFile("Przeslam dokument", "Bartek","dokument.pdf","1 MB");
+        addItemFileRight("","plik.rar", "20 MB");
 
     }
 
@@ -52,6 +54,18 @@ public class Chat_Body extends javax.swing.JPanel {
         body.repaint();
         body.revalidate();
     }
+
+    public void addItemFile(String text, String user, String fileName, String fileSize) {
+        Chat_Left_With_Profile item = new Chat_Left_With_Profile();
+        item.setText(text);
+        item.setFile(fileName, fileSize);
+        item.setTime();
+        item.setUserProfile(user);
+        body.add(item, "wrap, w 100::80%");
+        body.repaint();
+        body.revalidate();
+    }
+
     public void addItemRight(String text, Icon... image) {
         Chat_Right item = new Chat_Right();
         item.setText(text);
@@ -60,6 +74,16 @@ public class Chat_Body extends javax.swing.JPanel {
         body.repaint();
         body.revalidate();
     }
+
+    public void addItemFileRight(String text, String fileName, String fileSize) {
+        Chat_Right item = new Chat_Right();
+        item.setText(text);
+        item.setFile(fileName, fileSize);
+        body.add(item, "wrap, al right, w 100::80%");
+        body.repaint();
+        body.revalidate();
+    }
+
     public void addDate(String date){
         Chat_Date item=new Chat_Date();
         item.setDate(date);
