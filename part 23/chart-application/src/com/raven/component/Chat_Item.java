@@ -1,8 +1,16 @@
 package com.raven.component;
 
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.border.EmptyBorder;
-import java.awt.*;
 import javax.swing.JButton;
 
 public class Chat_Item extends javax.swing.JLayeredPane {
@@ -16,11 +24,11 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         txt.setOpaque(false);
     }
 
-    public void setUserProfile(String user){
+    public void setUserProfile(String user) {
         JLayeredPane layer = new JLayeredPane();
-        layer.setLayout(new FlowLayout(FlowLayout.LEFT,0,0));
-        layer.setBorder(new EmptyBorder(10,10,0,10));
-        JButton cmd=new JButton(user);
+        layer.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
+        layer.setBorder(new EmptyBorder(10, 10, 0, 10));
+        JButton cmd = new JButton(user);
         cmd.setCursor(new Cursor(Cursor.HAND_CURSOR));
         cmd.setBorder(null);
         cmd.setContentAreaFilled(false);
@@ -36,28 +44,30 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         txt.setText(text);
     }
 
-    @SuppressWarnings("unchecked")
-    public void setTime(String time){
+    public void setTime(String time) {
         JLayeredPane layer = new JLayeredPane();
-        layer.setLayout(new FlowLayout(FlowLayout.RIGHT,0,0));
-        layer.setBorder(new EmptyBorder(0,5,10,5));
+        layer.setLayout(new FlowLayout(FlowLayout.RIGHT, 0, 0));
+        layer.setBorder(new EmptyBorder(0, 5, 10, 5));
         label = new JLabel(time);
-        label.setForeground(new Color(110,110,110));
+        label.setForeground(new Color(110, 110, 110));
         label.setHorizontalTextPosition(JLabel.LEFT);
         layer.add(label);
         add(layer);
     }
 
     public void setImage(boolean right, Icon... image) {
-        JLayeredPane layer = new JLayeredPane();
-        layer.setLayout(new FlowLayout(right ? FlowLayout.RIGHT : FlowLayout.LEFT));
-        layer.setBorder(new EmptyBorder(0, 5, 0, 5));
-        Chat_Image chatImage = new Chat_Image(right);
-        chatImage.addImage(image);
-        layer.add(chatImage);
-        add(layer);
+        if (image.length > 0) {
+            JLayeredPane layer = new JLayeredPane();
+            layer.setLayout(new FlowLayout(right ? FlowLayout.RIGHT : FlowLayout.LEFT));
+            layer.setBorder(new EmptyBorder(0, 5, 0, 5));
+            Chat_Image chatImage = new Chat_Image(right);
+            chatImage.addImage(image);
+            layer.add(chatImage);
+            add(layer);
+        }
     }
-    public void setImage(boolean right,String... image) {
+
+    public void setImage(boolean right, String... image) {
         JLayeredPane layer = new JLayeredPane();
         layer.setLayout(new FlowLayout(right ? FlowLayout.RIGHT : FlowLayout.LEFT));
         layer.setBorder(new EmptyBorder(0, 5, 0, 5));
@@ -71,7 +81,7 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         JLayeredPane layer = new JLayeredPane();
         layer.setLayout(new FlowLayout(FlowLayout.LEFT));
         layer.setBorder(new EmptyBorder(0, 5, 0, 5));
-        Chat_File chatFile=new Chat_File();
+        Chat_File chatFile = new Chat_File();
         chatFile.setFile(fileName, fileSize);
         layer.add(chatFile);
         add(layer);
@@ -93,13 +103,14 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         txt.setVisible(false);
     }
 
+    @SuppressWarnings("unchecked")
     private void initComponents() {
 
         txt = new com.raven.swing.JIMSendTextPane();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
 
-        txt.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        txt.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 5, 10));
         txt.setSelectionColor(new java.awt.Color(92, 188, 255));
         add(txt);
     }
@@ -113,7 +124,5 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         super.paintComponent(grphcs);
     }
 
-
     private com.raven.swing.JIMSendTextPane txt;
-
 }

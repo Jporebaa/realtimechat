@@ -19,7 +19,7 @@ public class Chat_Date extends javax.swing.JLayeredPane {
 
         lbDate.setForeground(new java.awt.Color(191, 191, 191));
         lbDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbDate.setText("01/12/2023");
+        lbDate.setText("06/06/2023");
 
         line1.setForeground(new java.awt.Color(191, 191, 191));
 

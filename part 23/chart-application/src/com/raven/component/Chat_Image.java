@@ -27,10 +27,11 @@ public class Chat_Image extends javax.swing.JLayeredPane {
             add(pic, "wrap");
         }
     }
+
     public void addImage(String... images) {
         for (String image : images) {
             Image_Item pic = new Image_Item();
-            pic.setPreferredSize(new Dimension(200, 200));
+            pic.setPreferredSize(new Dimension(200, 200));  //  for test update next
             pic.setImage(image);
             // addEvent(pic, image);
             add(pic, "wrap");
@@ -50,6 +51,12 @@ public class Chat_Image extends javax.swing.JLayeredPane {
     }
 
     private Dimension getAutoSize(Icon image, int w, int h) {
+        if (w > image.getIconWidth()) {
+            w = image.getIconWidth();
+        }
+        if (h > image.getIconHeight()) {
+            h = image.getIconHeight();
+        }
         int iw = image.getIconWidth();
         int ih = image.getIconHeight();
         double xScale = (double) w / iw;
@@ -61,7 +68,6 @@ public class Chat_Image extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -74,9 +80,7 @@ public class Chat_Image extends javax.swing.JLayeredPane {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 300, Short.MAX_VALUE)
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    // End of variables declaration//GEN-END:variables
 }

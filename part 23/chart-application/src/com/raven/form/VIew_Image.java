@@ -22,7 +22,6 @@ public class VIew_Image extends javax.swing.JComponent {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         pic = new com.raven.swing.PictureBox();
@@ -34,7 +33,7 @@ public class VIew_Image extends javax.swing.JComponent {
             }
         });
 
-        cmdSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/save.png"))); // NOI18N
+        cmdSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/save.png")));
         cmdSave.setContentAreaFilled(false);
         cmdSave.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cmdSave.addActionListener(new java.awt.event.ActionListener() {
@@ -72,17 +71,17 @@ public class VIew_Image extends javax.swing.JComponent {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(pic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void picMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_picMousePressed
+    private void picMousePressed(java.awt.event.MouseEvent evt) {
         if (SwingUtilities.isLeftMouseButton(evt)) {
             setVisible(false);
         }
-    }//GEN-LAST:event_picMousePressed
+    }
 
-    private void cmdSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdSaveActionPerformed
+    private void cmdSaveActionPerformed(java.awt.event.ActionEvent evt) {
         PublicEvent.getInstance().getEventImageView().saveImage(image);
-    }//GEN-LAST:event_cmdSaveActionPerformed
+    }
 
     @Override
     protected void paintComponent(Graphics grphcs) {
@@ -93,8 +92,6 @@ public class VIew_Image extends javax.swing.JComponent {
     }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cmdSave;
     private com.raven.swing.PictureBox pic;
-    // End of variables declaration//GEN-END:variables
 }

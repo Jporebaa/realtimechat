@@ -9,6 +9,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
+
 public class Main extends javax.swing.JFrame {
 
     public Main() {
@@ -37,14 +38,13 @@ public class Main extends javax.swing.JFrame {
 
             @Override
             public void saveImage(Icon image) {
-                System.out.println("Save Image next update");
+                System.out.println("Zapisywanie obrazu");
             }
 
         });
     }
 
     @SuppressWarnings("unchecked")
-
     private void initComponents() {
 
         border = new javax.swing.JPanel();
@@ -118,8 +118,8 @@ public class Main extends javax.swing.JFrame {
 
         body.setLayout(new java.awt.CardLayout());
         body.setLayer(vIew_Image, javax.swing.JLayeredPane.POPUP_LAYER);
-        body.add(vIew_Image, "card3");
-        body.add(home, "card2");
+        body.add(vIew_Image, "karta1");
+        body.add(home, "karta2");
 
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);
@@ -175,40 +175,25 @@ public class Main extends javax.swing.JFrame {
 
     private int pX;
     private int pY;
-    private void titleMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseDragged
+    private void titleMouseDragged(java.awt.event.MouseEvent evt) {
         this.setLocation(this.getLocation().x + evt.getX() - pX, this.getLocation().y + evt.getY() - pY);
     }
 
-    private void titleMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMousePressed
+    private void titleMousePressed(java.awt.event.MouseEvent evt) {
         pX = evt.getX();
         pY = evt.getY();
     }
-
-    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCloseActionPerformed
+    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {
         System.exit(0);
     }
 
-    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMinimizeActionPerformed
+    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {
         this.setState(JFrame.ICONIFIED);
     }
 
+
     public static void main(String args[]) {
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
