@@ -1,7 +1,7 @@
 package com.raven.component;
 
-import javax.swing.*;
 import java.awt.Color;
+import javax.swing.Icon;
 
 public class Chat_Right extends javax.swing.JLayeredPane {
 
@@ -11,7 +11,7 @@ public class Chat_Right extends javax.swing.JLayeredPane {
     }
 
     public void setText(String text) {
-        if (text.equals("")) {
+        if (text.equals("asda")) {
             txt.hideText();
         } else {
             txt.setText(text);
@@ -27,17 +27,15 @@ public class Chat_Right extends javax.swing.JLayeredPane {
         txt.setImage(false, image);
     }
 
-    public void setFile(String fileName , String fileSize){
+    public void setFile(String fileName, String fileSize) {
         txt.setFile(fileName, fileSize);
     }
 
     public void setTime() {
-        txt.setTime("10:30 PM");
+        txt.setTime("10:30:00");
     }
 
-
     @SuppressWarnings("unchecked")
-
     private void initComponents() {
 
         txt = new com.raven.component.Chat_Item();
@@ -57,7 +55,5 @@ public class Chat_Right extends javax.swing.JLayeredPane {
     }
 
 
-
     private com.raven.component.Chat_Item txt;
-
 }

@@ -1,8 +1,8 @@
 package com.raven.component;
 
 import java.awt.Color;
-public class Chat_Title extends javax.swing.JPanel {
 
+public class Chat_Title extends javax.swing.JPanel {
 
     public Chat_Title() {
         initComponents();
@@ -11,31 +11,54 @@ public class Chat_Title extends javax.swing.JPanel {
     public void setUserName(String userName) {
         lbName.setText(userName);
     }
-    public void statusActive(){
-        lbStatus.setText("Active now");
-        lbStatus.setForeground(new java.awt.Color(40,147,59));
+
+    public void statusActive() {
+        lbStatus.setText("Aktywny teraz");
+        lbStatus.setForeground(new java.awt.Color(40, 147, 59));
     }
-    public void setStatusText(String text){
+
+    public void setStatusText(String text) {
         lbStatus.setText(text);
-        lbStatus.setForeground(new Color(160,160,160));
+        lbStatus.setForeground(new Color(160, 160, 160));
     }
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
 
-        setBackground(new java.awt.Color(242, 242, 242));
+        layer = new javax.swing.JLayeredPane();
+        lbName = new javax.swing.JLabel();
+        lbStatus = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(229, 229, 229));
+
+        layer.setLayout(new java.awt.GridLayout(0, 1));
+
+        lbName.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        lbName.setForeground(new java.awt.Color(66, 66, 66));
+        lbName.setText("Imie");
+        layer.add(lbName);
+
+        lbStatus.setForeground(new java.awt.Color(40, 147, 59));
+        lbStatus.setText("Aktywny teraz");
+        layer.add(lbStatus);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 400, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(layer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(406, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 40, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(layer, javax.swing.GroupLayout.PREFERRED_SIZE, 34, Short.MAX_VALUE)
+                                .addGap(3, 3, 3))
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
 
     private javax.swing.JLayeredPane layer;

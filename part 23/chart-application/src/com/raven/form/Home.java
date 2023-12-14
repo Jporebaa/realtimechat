@@ -16,9 +16,7 @@ public class Home extends javax.swing.JLayeredPane {
         this.add(new Menu_Right());
     }
 
-
     @SuppressWarnings("unchecked")
-
     private void initComponents() {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -32,7 +30,5 @@ public class Home extends javax.swing.JLayeredPane {
                         .addGap(0, 551, Short.MAX_VALUE)
         );
     }
-
-
 
 }

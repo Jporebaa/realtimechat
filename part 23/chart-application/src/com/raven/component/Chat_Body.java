@@ -1,9 +1,12 @@
 package com.raven.component;
 
 import com.raven.swing.ScrollBar;
+import java.awt.Adjustable;
 import java.awt.Color;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
+import javax.swing.JScrollBar;
 import net.miginfocom.swing.MigLayout;
 
 public class Chat_Body extends javax.swing.JPanel {
@@ -11,20 +14,18 @@ public class Chat_Body extends javax.swing.JPanel {
     public Chat_Body() {
         initComponents();
         init();
-        addItemRight("Test wyświetlania wiadomości.");
-        addItemRight("test\nCześć");
-        addItemLeft("Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości. Test wyświetlania wiadomości.","Test", new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
-        addDate("01/12/2023");
-        String img[] = {"LRMj,K-:?G9G_JIon}WqD~ITRPs,", "LCGlO@00.R~o.9DOO[%L02?aJ7D*"};
-        addItemLeft("hello\nerererew\newewe", "Dara", img);
-        addItemLeft("test\ntestest\ntestest","Ania");
-        addItemRight("test\ntestest\ntestest",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
-        addItemLeft("","Kazimierz",new ImageIcon(getClass().getResource("/com/raven/icon/test/dog.jpg")));
-        addDate("Dzisiaj");
-        addItemRight("test\ntestest\ntestest");
-        addItemFile("Przeslam dokument", "Bartek","dokument.pdf","1 MB");
-        addItemFileRight("","plik.rar", "20 MB");
-
+        //addItemRight("Send a text message to a group of contacts. Include photos, personalize your texts, and track who clicked your links.", new ImageIcon(getClass().getResource("/com/raven/icon/testing/cat.png")), new ImageIcon(getClass().getResource("/com/raven/icon/testing/pic.jpg")));
+//        addItemRight("hello\nHi");
+//        addItemLeft("Simpletext started as a passion project because I couldn’t find what I was looking for. Most apps were trying to do too much and ended up bloated with features I don’t need. So I built Simpletext based on a simple premise — what if there’s an app that refuses to do more, choosing instead to do just one thing, and do it well? For Simpletext, that one thing is writing.", "Raven", new ImageIcon(getClass().getResource("/com/raven/icon/testing/dog.jpg")), new ImageIcon(getClass().getResource("/com/raven/icon/testing/pic.jpg")));
+//        addDate("05/06/2021");
+//        String img[] = {"LRMj,K-:?G9G_JIon}WqD~ITRPs,", "LCGlO@00.R~o.9DOO[%L02?aJ7D*"};
+//        addItemLeft("hello\nerererew\newewe", "Dara", img);
+//        addItemRight("hello\nerererew\newewe", new ImageIcon(getClass().getResource("/com/raven/icon/testing/pic.jpg")));
+//        addItemLeft("Hello this is my friend", "Jonh", new ImageIcon(getClass().getResource("/com/raven/icon/testing/dog.jpg")), new ImageIcon(getClass().getResource("/com/raven/icon/testing/dog.jpg")));
+        addItemRight("Ok\nWhat is he name ?");
+//        addItemLeft("", "Ro", new ImageIcon(getClass().getResource("/com/raven/icon/testing/pic.jpg")));
+//        addItemFile("", "Dara", "my doc.pdf", "1 MB");
+//        addItemFileRight("", "myfile.rar", "15 MB");
     }
 
     private void init() {
@@ -33,7 +34,7 @@ public class Chat_Body extends javax.swing.JPanel {
         sp.getVerticalScrollBar().setBackground(Color.WHITE);
     }
 
-    public void addItemLeft(String text, String user, Icon ...image) {
+    public void addItemLeft(String text, String user, Icon... image) {
         Chat_Left_With_Profile item = new Chat_Left_With_Profile();
         item.setText(text);
         item.setImage(image);
@@ -73,6 +74,8 @@ public class Chat_Body extends javax.swing.JPanel {
         body.add(item, "wrap, al right, w 100::80%");
         body.repaint();
         body.revalidate();
+        item.setTime();
+        scrollToBottom();
     }
 
     public void addItemFileRight(String text, String fileName, String fileSize) {
@@ -84,14 +87,15 @@ public class Chat_Body extends javax.swing.JPanel {
         body.revalidate();
     }
 
-    public void addDate(String date){
-        Chat_Date item=new Chat_Date();
+    public void addDate(String date) {
+        Chat_Date item = new Chat_Date();
         item.setDate(date);
-        body.add(item,"wrap, al center");
+        body.add(item, "wrap, al center");
         body.repaint();
         body.revalidate();
     }
 
+    @SuppressWarnings("unchecked")
     private void initComponents() {
 
         sp = new javax.swing.JScrollPane();
@@ -127,6 +131,18 @@ public class Chat_Body extends javax.swing.JPanel {
         );
     }
 
+    private void scrollToBottom() {
+        JScrollBar verticalBar = sp.getVerticalScrollBar();
+        AdjustmentListener downScroller = new AdjustmentListener() {
+            @Override
+            public void adjustmentValueChanged(AdjustmentEvent e) {
+                Adjustable adjustable = e.getAdjustable();
+                adjustable.setValue(adjustable.getMaximum());
+                verticalBar.removeAdjustmentListener(this);
+            }
+        };
+        verticalBar.addAdjustmentListener(downScroller);
+    }
 
 
     private javax.swing.JPanel body;

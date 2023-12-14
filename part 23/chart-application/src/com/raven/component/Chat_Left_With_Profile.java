@@ -19,11 +19,12 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
     }
 
     public void setText(String text) {
-        if(text.equals("")){
+        if (text.equals("")) {
             txt.hideText();
         } else {
             txt.setText(text);
         }
+
     }
 
     public void setImage(Icon... image) {
@@ -34,12 +35,12 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
         txt.setImage(false, image);
     }
 
-    public void setFile(String fileName , String fileSize){
+    public void setFile(String fileName, String fileSize) {
         txt.setFile(fileName, fileSize);
     }
 
     public void setTime() {
-        txt.setTime("10:30 PM");
+        txt.setTime("10:30:00");    //  Testing
     }
 
     @SuppressWarnings("unchecked")
@@ -52,7 +53,7 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         IaImage.setBorderSize(0);
-        IaImage.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/testing/dog.jpg")));
+        IaImage.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/testing/dog.jpg"))); // NOI18N
         IaImage.setMaximumSize(new java.awt.Dimension(31, 31));
         IaImage.setMinimumSize(new java.awt.Dimension(31, 31));
         IaImage.setPreferredSize(new java.awt.Dimension(31, 31));

@@ -18,7 +18,7 @@ public class Menu_Right extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(249, 249, 249));
 
-        jLabel1.setText("Menu Righ Note");
+        jLabel1.setText("Prawe menu");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

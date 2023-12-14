@@ -27,7 +27,6 @@ public class Item_People extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-
     private void initComponents() {
 
         imageAvatar1 = new com.raven.swing.ImageAvatar();
@@ -36,10 +35,10 @@ public class Item_People extends javax.swing.JPanel {
         setBackground(new java.awt.Color(242, 242, 242));
 
         imageAvatar1.setBorderSize(0);
-        imageAvatar1.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/profile.png"))); // NOI18N
+        imageAvatar1.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/profile.png")));
 
-        lb.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        lb.setText("Name");
+        lb.setFont(new java.awt.Font("sansserif", 0, 14));
+        lb.setText("Imie");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -64,8 +63,6 @@ public class Item_People extends javax.swing.JPanel {
     }
 
 
-
     private com.raven.swing.ImageAvatar imageAvatar1;
     private javax.swing.JLabel lb;
-
 }

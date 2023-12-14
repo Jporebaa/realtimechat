@@ -1,6 +1,8 @@
 package com.raven.main;
 
+import com.formdev.flatlaf.intellijthemes.FlatArcIJTheme;
 import com.raven.event.EventImageView;
+import com.raven.event.EventMain;
 import com.raven.event.PublicEvent;
 import com.raven.swing.ComponentResizer;
 import java.awt.Dimension;
@@ -23,12 +25,25 @@ public class Main extends javax.swing.JFrame {
         com.setMinimumSize(new Dimension(900, 500));
         com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());
         com.setSnapSize(new Dimension(10, 10));
+        login.setVisible(true);
+        loading.setVisible(false);
         vIew_Image.setVisible(false);
-        home.setVisible(true);
+        home.setVisible(false);
         initEvent();
     }
 
     private void initEvent() {
+        PublicEvent.getInstance().addEventMain(new EventMain() {
+            @Override
+            public void showLoading(boolean show) {
+                loading.setVisible(show);
+            }
+
+            @Override
+            public void initChat() {
+                home.setVisible(true);
+            }
+        });
         PublicEvent.getInstance().addEventImageView(new EventImageView() {
             @Override
             public void viewImage(Icon image) {
@@ -44,7 +59,6 @@ public class Main extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-
     private void initComponents() {
 
         border = new javax.swing.JPanel();
@@ -53,6 +67,8 @@ public class Main extends javax.swing.JFrame {
         cmdMinimize = new javax.swing.JButton();
         cmdClose = new javax.swing.JButton();
         body = new javax.swing.JLayeredPane();
+        loading = new com.raven.form.Loading();
+        login = new com.raven.form.Login();
         vIew_Image = new com.raven.form.VIew_Image();
         home = new com.raven.form.Home();
 
@@ -117,6 +133,8 @@ public class Main extends javax.swing.JFrame {
         );
 
         body.setLayout(new java.awt.CardLayout());
+        body.add(loading, "card5");
+        body.add(login, "card4");
         body.setLayer(vIew_Image, javax.swing.JLayeredPane.POPUP_LAYER);
         body.add(vIew_Image, "card3");
         body.add(home, "card2");
@@ -175,42 +193,27 @@ public class Main extends javax.swing.JFrame {
 
     private int pX;
     private int pY;
-    private void titleMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseDragged
+    private void titleMouseDragged(java.awt.event.MouseEvent evt) {
         this.setLocation(this.getLocation().x + evt.getX() - pX, this.getLocation().y + evt.getY() - pY);
     }
 
-    private void titleMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMousePressed
+    private void titleMousePressed(java.awt.event.MouseEvent evt) {
         pX = evt.getX();
         pY = evt.getY();
     }
 
-    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCloseActionPerformed
+    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {
         System.exit(0);
     }
 
-    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMinimizeActionPerformed
+    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {
         this.setState(JFrame.ICONIFIED);
     }
 
     public static void main(String args[]) {
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-
+        FlatArcIJTheme.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new Main().setVisible(true);
             }
@@ -223,6 +226,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton cmdClose;
     private javax.swing.JButton cmdMinimize;
     private com.raven.form.Home home;
+    private com.raven.form.Loading loading;
+    private com.raven.form.Login login;
     private javax.swing.JPanel title;
     private com.raven.form.VIew_Image vIew_Image;
 }
