@@ -5,7 +5,215 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment=" utworzenie i konfiguracja  przestrzeni prowadzania dancyh 2">
+      <change afterPath="$PROJECT_DIR$/part 23/db/chat_application.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/java-swing-chat-application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/java-swing-chat-application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_23_bin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_23_bin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/emoji/icon/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/box_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/double_tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/group_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/login_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/message_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/minimize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/more_disable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/testing/cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/testing/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/testing/pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application1/com/raven/icon/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Image$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left_With_Profile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Right.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Title.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Image_Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/MenuButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventChat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventImageView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/PublicEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Loading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Login$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Login$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Left$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Left$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Left$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Left.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Right.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/box_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/double_tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/group_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/login_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/message_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/minimize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/test/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/icon/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ComponentResizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ImageAvatar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpColumnFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpEditorKit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpLabelView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ModernScrollBarUI$InvisibleScrollBarButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ModernScrollBarUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/PictureBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/Progress$ProgressType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/Progress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ProgressCircleUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ScrollBar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/blurHash/Base83.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/blurHash/BlurHash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/blurHash/SRGB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/blurHash/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/form/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/form/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/form/Menu_Left.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/form/Menu_Right.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/main/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/main/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/main/Main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/main/Main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/main/Main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/realtimechat/com/raven/swing/ComponentResizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/app/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/connection/DatabaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/main/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/main/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_File_Receiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Package_Sender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Receive_Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Receive_Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Register.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_Send_Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/model/Model_User_Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/ServiceFIle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/service/ServiceUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/swing/blurHash/Base83.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/swing/blurHash/BlurHash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/swing/blurHash/SRGB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server8/com/raven/swing/blurHash/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/chart-application5/testing/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 12/server/server4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/chart-application5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/chart-application5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/server/server.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,32 +267,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;1-updatereadmefile&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jakub/IdeaProjects/Project1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "1-updatereadmefile",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "C:/Users/jakub/IdeaProjects/realtimechat-server",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "two.files.diff.last.used.folder": "C:/Users/jakub/IdeaProjects/Project1/part 12/server"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server\src" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\chart-application\server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\component" />
-      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\icon\test" />
-      <recent name="C:\Users\Michal_Mordarski\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\main\icon" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 25" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server" />
+      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server\dist" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.raven.event" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.raven.main.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
       <module name="chart-application5" />
       <extension name="coverage">
@@ -96,6 +316,51 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.raven.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
+      <module name="chart-application5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.raven.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="raven.main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="raven.main.Main" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="raven.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jackson-annotations-2.10.1.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/server/lib/socket/jackson-annotations-2.10.1.jar" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -110,7 +375,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.raven.main.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JAR Application.jackson-annotations-2.10.1.jar (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +475,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/realtimechat$jackson_annotations_2_10_1_jar__1_.ic" NAME="jackson-annotations-2.10.1.jar (1) Coverage Results" MODIFIED="1702644926785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.raven.main.*</FILTER>
     </SUITE>

@@ -19,7 +19,7 @@ public class Login extends javax.swing.JPanel {
                     public void run() {
                         PublicEvent.getInstance().getEventMain().showLoading(true);
                         try {
-                            Thread.sleep(3000); //  for test
+                            Thread.sleep(300); //  for test
                         } catch (InterruptedException e) {
                         }
                         PublicEvent.getInstance().getEventMain().showLoading(false);
@@ -31,7 +31,7 @@ public class Login extends javax.swing.JPanel {
 
             @Override
             public void register() {
-                System.out.println("Register");
+                System.out.println("Rejestracja");
             }
 
             @Override

@@ -8,3 +8,6 @@ https://www.figma.com/file/ifyvPSXeKAn5o1qJJEskYA/RealTimeChat?type=design&node-
 
 Sprinty:
 https://porebajakub.atlassian.net/jira/software/projects/REALTIME/boards/2/backlog
+
+repozytorium aplikacji serwerowej:
+https://github.com/Jporebaa/realtimechat-server.git
