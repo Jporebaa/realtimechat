@@ -1,7 +1,13 @@
 package com.raven.form;
 
 import com.raven.event.EventLogin;
+import com.raven.event.EventMessage;
 import com.raven.event.PublicEvent;
+import com.raven.model.Model_Message;
+import com.raven.model.Model_Register;
+import com.raven.model.Model_User_Account;
+import com.raven.service.Service;
+import io.socket.client.Ack;
 
 public class Login extends javax.swing.JPanel {
 
@@ -30,8 +36,21 @@ public class Login extends javax.swing.JPanel {
             }
 
             @Override
-            public void register() {
-                System.out.println("Rejestracja");
+            public void register(Model_Register data, EventMessage message) {
+                Service.getInstance().getClient().emit("Rejestracja", data.toJsonObject(), new Ack() {
+                    @Override
+                    public void call(Object... os) {
+                        if (os.length > 0) {
+                            Model_Message ms = new Model_Message((boolean) os[0], os[1].toString());
+                            message.callMessage(ms);
+                            if (ms.isAction()) {
+                                Model_User_Account user = new Model_User_Account(os[2]);
+                                Service.getInstance().setUser(user);
+                            }
+                            //  Informacja zwrotna po rejestracji
+                        }
+                    }
+                });
             }
 
             @Override

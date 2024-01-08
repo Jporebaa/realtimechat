@@ -1,10 +1,18 @@
 package com.raven.form;
 
 import com.raven.component.Item_People;
+import com.raven.event.EventMenuLeft;
+import com.raven.event.PublicEvent;
+import com.raven.model.Model_User_Account;
 import com.raven.swing.ScrollBar;
 import net.miginfocom.swing.MigLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Menu_Left extends javax.swing.JPanel {
+
+    private List<Model_User_Account> userAccount;
 
     public Menu_Left() {
         initComponents();
@@ -14,13 +22,24 @@ public class Menu_Left extends javax.swing.JPanel {
     private void init() {
         sp.setVerticalScrollBar(new ScrollBar());
         menuList.setLayout(new MigLayout("fillx", "0[]0", "0[]0"));
+        userAccount = new ArrayList<>();
+        PublicEvent.getInstance().addEventMenuLeft(new EventMenuLeft() {
+            @Override
+            public void newUser(List<Model_User_Account> users) {
+                for (Model_User_Account d : users) {
+                    userAccount.add(d);
+                    menuList.add(new Item_People(d.getUserName()), "wrap");
+                    refreshMenuList();
+                }
+            }
+        });
         showMessage();
     }
 
     private void showMessage() {
         menuList.removeAll();
-        for (int i = 0; i < 20; i++) {
-            menuList.add(new Item_People("People " + i), "wrap");
+        for (Model_User_Account d:userAccount) {
+            menuList.add(new Item_People(d.getUserName()), "wrap");
         }
         refreshMenuList();
     }
