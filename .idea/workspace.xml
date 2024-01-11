@@ -4,35 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Dodanie repozytorium aplikacji serwerowej do pliku README.md">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventMenuLeft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_User_Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ActiveStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PanelSlide.java" afterDir="false" />
+    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Połączenie aplikacji z bazą danych, obsługa logowania">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Item_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Item_People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/PublicEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/PublicEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ComponentResizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ComponentResizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ImageAvatar.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ImageAvatar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/JIMSendTextPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/JIMSendTextPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ModernScrollBarUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ModernScrollBarUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PictureBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PictureBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/Progress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ProgressCircleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ProgressCircleUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ScrollBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/ScrollBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/blurHash/Base83.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/blurHash/Base83.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +69,7 @@
     "git-widget-placeholder": "1-updatereadmefile",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "C:/Users/jakub/IdeaProjects/realtimechat/part 23/chart-application/src/com/raven",
+    "last_opened_file_path": "C:/Users/jakub/IdeaProjects/realtimechat-server",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -267,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703790716865</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Połączenie aplikacji z bazą danych, obsługa logowania">
+      <option name="closed" value="true" />
+      <created>1705009705491</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705009705491</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +272,8 @@
     <MESSAGE value="Dodanie bilbioteki FlatLaf, Stworzenie okna logowania, Stworzenie okna rejestracji" />
     <MESSAGE value=" utworzenie i konfiguracja  przestrzeni prowadzania dancyh" />
     <MESSAGE value="Dodanie repozytorium aplikacji serwerowej do pliku README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie repozytorium aplikacji serwerowej do pliku README.md" />
+    <MESSAGE value="Połączenie aplikacji z bazą danych, obsługa logowania" />
+    <option name="LAST_COMMIT_MESSAGE" value="Połączenie aplikacji z bazą danych, obsługa logowania" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
