@@ -1,7 +1,7 @@
 package com.raven.swing;
 
-import java.awt.Graphics;
-import javax.swing.JLabel;
+import javax.swing.*;
+import java.awt.*;
 
 public class Line extends JLabel {
 

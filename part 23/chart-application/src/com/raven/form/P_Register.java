@@ -1,6 +1,9 @@
 package com.raven.form;
 
+import com.raven.event.EventMessage;
 import com.raven.event.PublicEvent;
+import com.raven.model.Model_Message;
+import com.raven.model.Model_Register;
 
 public class P_Register extends javax.swing.JPanel {
 
@@ -9,6 +12,7 @@ public class P_Register extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         lbTitle = new javax.swing.JLabel();
@@ -20,19 +24,20 @@ public class P_Register extends javax.swing.JPanel {
         cmdBackLogin = new javax.swing.JButton();
         txtRePassword = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
+        lbError = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
         lbTitle.setFont(new java.awt.Font("sansserif", 0, 30)); // NOI18N
         lbTitle.setForeground(new java.awt.Color(87, 87, 87));
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTitle.setText("Rejestracja");
+        lbTitle.setText("Register");
 
-        jLabel1.setText("Nazwa użytkownika");
+        jLabel1.setText("User Name");
 
-        jLabel2.setText("Hasło");
+        jLabel2.setText("Password");
 
-        cmdRegister.setText("Zarejestruj się");
+        cmdRegister.setText("Register");
         cmdRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdRegisterActionPerformed(evt);
@@ -41,7 +46,7 @@ public class P_Register extends javax.swing.JPanel {
 
         cmdBackLogin.setFont(new java.awt.Font("sansserif", 0, 11)); // NOI18N
         cmdBackLogin.setForeground(new java.awt.Color(15, 128, 206));
-        cmdBackLogin.setText("Powrót do strony logowania");
+        cmdBackLogin.setText("Back Login");
         cmdBackLogin.setContentAreaFilled(false);
         cmdBackLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cmdBackLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -50,7 +55,12 @@ public class P_Register extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setText("Potwierdź hasło");
+        jLabel3.setText("Confirm Password");
+
+        lbError.setFont(new java.awt.Font("sansserif", 0, 11)); // NOI18N
+        lbError.setForeground(new java.awt.Color(255, 0, 0));
+        lbError.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbError.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -58,16 +68,21 @@ public class P_Register extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(lbTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(cmdBackLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(cmdRegister, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(txtPass)
-                                        .addComponent(txtUser, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
-                                        .addComponent(txtRePassword)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(lbError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(20, 20, 20)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(cmdBackLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(cmdRegister, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(txtPass)
+                                                        .addComponent(txtUser, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                                                        .addComponent(txtRePassword)
+                                                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE))))
                                 .addGap(20, 20, 20))
         );
         layout.setVerticalGroup(
@@ -91,26 +106,52 @@ public class P_Register extends javax.swing.JPanel {
                                 .addComponent(cmdRegister)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cmdBackLogin)
-                                .addGap(0, 30, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lbError)
+                                .addGap(0, 9, Short.MAX_VALUE))
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
-    private void cmdBackLoginActionPerformed(java.awt.event.ActionEvent evt) {
+    private void cmdBackLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBackLoginActionPerformed
         PublicEvent.getInstance().getEventLogin().goLogin();
-    }
+    }//GEN-LAST:event_cmdBackLoginActionPerformed
 
-    private void cmdRegisterActionPerformed(java.awt.event.ActionEvent evt) {
-        PublicEvent.getInstance().getEventLogin().register();
-    }
+    private void cmdRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdRegisterActionPerformed
+        String userName = txtUser.getText().trim();
+        String password = String.valueOf(txtPass.getPassword());
+        String confirmPassword = String.valueOf(txtRePassword.getPassword());
+        if (userName.equals("")) {
+            txtUser.grabFocus();
+        } else if (password.equals("")) {
+            txtPass.grabFocus();
+        } else if (!password.equals(confirmPassword)) {
+            txtPass.grabFocus();
+        } else {
+            Model_Register data = new Model_Register(userName, password);
+            PublicEvent.getInstance().getEventLogin().register(data, new EventMessage() {
+                @Override
+                public void callMessage(Model_Message message) {
+                    if (!message.isAction()) {
+                        lbError.setText(message.getMessage());
+                    } else {
+                        PublicEvent.getInstance().getEventMain().initChat();
+                    }
+                }
+            });
+        }
+    }//GEN-LAST:event_cmdRegisterActionPerformed
 
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cmdBackLogin;
     private javax.swing.JButton cmdRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lbError;
     private javax.swing.JLabel lbTitle;
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JPasswordField txtRePassword;
     private javax.swing.JTextField txtUser;
+    // End of variables declaration//GEN-END:variables
 }

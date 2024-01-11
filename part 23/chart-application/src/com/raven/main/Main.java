@@ -4,6 +4,7 @@ import com.formdev.flatlaf.intellijthemes.FlatArcIJTheme;
 import com.raven.event.EventImageView;
 import com.raven.event.EventMain;
 import com.raven.event.PublicEvent;
+import com.raven.service.Service;
 import com.raven.swing.ComponentResizer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -30,6 +31,7 @@ public class Main extends javax.swing.JFrame {
         vIew_Image.setVisible(false);
         home.setVisible(false);
         initEvent();
+        Service.getInstance().startServer();
     }
 
     private void initEvent() {
@@ -42,6 +44,8 @@ public class Main extends javax.swing.JFrame {
             @Override
             public void initChat() {
                 home.setVisible(true);
+                login.setVisible(false);
+                Service.getInstance().getClient().emit("list_user", Service.getInstance().getUser().getUserID());
             }
         });
         PublicEvent.getInstance().addEventImageView(new EventImageView() {
@@ -59,6 +63,7 @@ public class Main extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
+
     private void initComponents() {
 
         border = new javax.swing.JPanel();
@@ -193,20 +198,20 @@ public class Main extends javax.swing.JFrame {
 
     private int pX;
     private int pY;
-    private void titleMouseDragged(java.awt.event.MouseEvent evt) {
+    private void titleMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseDragged
         this.setLocation(this.getLocation().x + evt.getX() - pX, this.getLocation().y + evt.getY() - pY);
     }
 
-    private void titleMousePressed(java.awt.event.MouseEvent evt) {
+    private void titleMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMousePressed
         pX = evt.getX();
         pY = evt.getY();
     }
 
-    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {
+    private void cmdCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCloseActionPerformed
         System.exit(0);
     }
 
-    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {
+    private void cmdMinimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMinimizeActionPerformed
         this.setState(JFrame.ICONIFIED);
     }
 
@@ -230,4 +235,5 @@ public class Main extends javax.swing.JFrame {
     private com.raven.form.Login login;
     private javax.swing.JPanel title;
     private com.raven.form.VIew_Image vIew_Image;
+
 }
