@@ -65,6 +65,8 @@ public class Image_Item extends javax.swing.JLayeredPane {
     }
 
 
+
     private com.raven.swing.PictureBox pic;
     private com.raven.swing.Progress progress1;
+
 }

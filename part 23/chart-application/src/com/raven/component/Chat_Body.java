@@ -7,7 +7,6 @@ import java.awt.Adjustable;
 import java.awt.Color;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
-import javax.swing.Icon;
 import javax.swing.JScrollBar;
 import net.miginfocom.swing.MigLayout;
 
@@ -140,8 +139,6 @@ public class Chat_Body extends javax.swing.JPanel {
         verticalBar.addAdjustmentListener(downScroller);
     }
 
-
     private javax.swing.JPanel body;
     private javax.swing.JScrollPane sp;
-
 }

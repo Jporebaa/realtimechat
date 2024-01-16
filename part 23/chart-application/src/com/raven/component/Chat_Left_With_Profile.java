@@ -40,7 +40,7 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
     }
 
     public void setTime() {
-        txt.setTime("10:30:00");    //  Testing
+        txt.setTime("10:30 PM");    //  Testing
     }
 
     @SuppressWarnings("unchecked")
@@ -78,6 +78,7 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
         add(jLayeredPane1);
         add(txt);
     }
+
 
 
     private com.raven.swing.ImageAvatar IaImage;

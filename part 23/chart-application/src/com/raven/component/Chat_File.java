@@ -25,7 +25,7 @@ public class Chat_File extends javax.swing.JPanel {
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridLayout(2, 1));
 
-        lbFileName.setText("Moja nazwa pliku.txt");
+        lbFileName.setText("My File Name.file");
         jPanel1.add(lbFileName);
 
         lbFileSize.setForeground(new java.awt.Color(7, 98, 153));
@@ -52,7 +52,8 @@ public class Chat_File extends javax.swing.JPanel {
                                         .addComponent(progress1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(3, 3, 3))
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
+
 
 
     private javax.swing.JPanel jPanel1;

@@ -47,7 +47,6 @@ public class Menu_Left extends javax.swing.JPanel {
                         Item_People item = (Item_People) com;
                         if (item.getUser().getUserID() == userID) {
                             item.updateStatus();
-
                             break;
                         }
                     }
@@ -195,7 +194,7 @@ public class Menu_Left extends javax.swing.JPanel {
         );
     }
 
-    private void menuMessageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuMessageActionPerformed
+    private void menuMessageActionPerformed(java.awt.event.ActionEvent evt) {
         if (!menuMessage.isSelected()) {
             menuMessage.setSelected(true);
             menuGroup.setSelected(false);
@@ -204,7 +203,7 @@ public class Menu_Left extends javax.swing.JPanel {
         }
     }
 
-    private void menuGroupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuGroupActionPerformed
+    private void menuGroupActionPerformed(java.awt.event.ActionEvent evt) {
         if (!menuGroup.isSelected()) {
             menuMessage.setSelected(false);
             menuGroup.setSelected(true);
@@ -213,7 +212,7 @@ public class Menu_Left extends javax.swing.JPanel {
         }
     }
 
-    private void menuBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBoxActionPerformed
+    private void menuBoxActionPerformed(java.awt.event.ActionEvent evt) {
         if (!menuBox.isSelected()) {
             menuMessage.setSelected(false);
             menuGroup.setSelected(false);

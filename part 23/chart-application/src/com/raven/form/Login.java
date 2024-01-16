@@ -50,7 +50,7 @@ public class Login extends javax.swing.JPanel {
 
             @Override
             public void register(Model_Register data, EventMessage message) {
-                Service.getInstance().getClient().emit("register", data.toJsonObject(), new Ack() {
+                Service.getInstance().getClient().emit("Rejestracja", data.toJsonObject(), new Ack() {
                     @Override
                     public void call(Object... os) {
                         if (os.length > 0) {
@@ -60,7 +60,7 @@ public class Login extends javax.swing.JPanel {
                                 Service.getInstance().setUser(user);
                             }
                             message.callMessage(ms);
-                            //  call message back when done register
+
                         }
                     }
                 });
@@ -82,7 +82,6 @@ public class Login extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         pic = new com.raven.swing.PictureBox();
@@ -198,15 +197,13 @@ public class Login extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private com.raven.swing.PictureBox pic;
     private com.raven.swing.PanelSlide slide;
-    // End of variables declaration//GEN-END:variables
 }

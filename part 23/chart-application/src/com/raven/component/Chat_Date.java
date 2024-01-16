@@ -51,6 +51,7 @@ public class Chat_Date extends javax.swing.JLayeredPane {
     }
 
 
+
     private javax.swing.JLabel lbDate;
     private com.raven.swing.Line line1;
     private com.raven.swing.Line line2;

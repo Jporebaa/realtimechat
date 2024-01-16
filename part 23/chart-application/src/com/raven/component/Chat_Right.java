@@ -11,7 +11,7 @@ public class Chat_Right extends javax.swing.JLayeredPane {
     }
 
     public void setText(String text) {
-        if (text.equals("asda")) {
+        if (text.equals("")) {
             txt.hideText();
         } else {
             txt.setText(text);
@@ -32,7 +32,7 @@ public class Chat_Right extends javax.swing.JLayeredPane {
     }
 
     public void setTime() {
-        txt.setTime("10:30:00");
+        txt.setTime("10:30 PM");    //  Testing
     }
 
     @SuppressWarnings("unchecked")
@@ -55,5 +55,7 @@ public class Chat_Right extends javax.swing.JLayeredPane {
     }
 
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.raven.component.Chat_Item txt;
+
 }

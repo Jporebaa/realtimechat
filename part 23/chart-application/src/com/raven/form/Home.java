@@ -21,15 +21,17 @@ public class Home extends javax.swing.JLayeredPane {
         chat.setVisible(false);
     }
 
-    public void setUser(Model_User_Account user){
+    public void setUser(Model_User_Account user) {
         chat.setUser(user);
         chat.setVisible(true);
     }
 
-    public void updateUser(Model_User_Account user){
+    public void updateUser(Model_User_Account user) {
         chat.updateUser(user);
     }
+
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -42,6 +44,8 @@ public class Home extends javax.swing.JLayeredPane {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 551, Short.MAX_VALUE)
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
 }

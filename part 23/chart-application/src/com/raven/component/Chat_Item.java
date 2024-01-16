@@ -124,5 +124,7 @@ public class Chat_Item extends javax.swing.JLayeredPane {
         super.paintComponent(grphcs);
     }
 
+
     private com.raven.swing.JIMSendTextPane txt;
+
 }

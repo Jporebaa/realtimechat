@@ -6,7 +6,6 @@ import com.raven.model.Model_User_Account;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
-
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
@@ -60,9 +59,9 @@ public class Service {
                     }
                 }
             });
-            client.on("receive me",new Emitter.Listener(){
+            client.on("receive_ms", new Emitter.Listener() {
                 @Override
-                public void call(Object... os){
+                public void call(Object... os) {
                     Model_Receive_Message message = new Model_Receive_Message(os[0]);
                     PublicEvent.getInstance().getEventChat().receiveMessage(message);
                 }

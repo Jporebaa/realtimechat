@@ -33,7 +33,7 @@ public class Chat_Image extends javax.swing.JLayeredPane {
             Image_Item pic = new Image_Item();
             pic.setPreferredSize(new Dimension(200, 200));  //  for test update next
             pic.setImage(image);
-            // addEvent(pic, image);
+            //  addEvent(pic, image);
             add(pic, "wrap");
         }
     }
@@ -81,6 +81,7 @@ public class Chat_Image extends javax.swing.JLayeredPane {
                         .addGap(0, 300, Short.MAX_VALUE)
         );
     }
+
 
 
 }

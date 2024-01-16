@@ -18,16 +18,15 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
-
 import net.miginfocom.swing.MigLayout;
 
 public class Chat_Bottom extends javax.swing.JPanel {
 
-    private Model_User_Account getUser() {
+    public Model_User_Account getUser() {
         return user;
     }
 
-    public void setUser(Model_User_Account user){
+    public void setUser(Model_User_Account user) {
         this.user = user;
     }
 
@@ -38,9 +37,8 @@ public class Chat_Bottom extends javax.swing.JPanel {
         init();
     }
 
-
     private void init() {
-        mig=new MigLayout("fillx, filly", "0[fill]0[]0[]2", "2[fill]2[]0");
+        mig = new MigLayout("fillx, filly", "0[fill]0[]0[]2", "2[fill]2[]0");
         setLayout(mig);
         JScrollPane scroll = new JScrollPane();
         scroll.setBorder(null);
@@ -49,15 +47,17 @@ public class Chat_Bottom extends javax.swing.JPanel {
             @Override
             public void keyTyped(KeyEvent ke) {
                 refresh();
-                if(ke.getKeyChar()==10&&ke.isControlDown()){
+                if (ke.getKeyChar() == 10 && ke.isControlDown()) {
+
                     eventSend(txt);
                 }
             }
         });
-        txt.setBorder(new EmptyBorder(5,5,5,5));
-        txt.setHintText("Napisz wiadomość");
+        txt.setBorder(new EmptyBorder(5, 5, 5, 5));
+        txt.setHintText("Napisz wiadomość...");
         scroll.setViewportView(txt);
         ScrollBar sb = new ScrollBar();
+        sb.setBackground(new Color(229, 229, 229));
         sb.setPreferredSize(new Dimension(2, 10));
         scroll.setVerticalScrollBar(sb);
         add(sb);
@@ -101,9 +101,9 @@ public class Chat_Bottom extends javax.swing.JPanel {
         panel.add(cmdMore);
         panel.add(cmd);
         add(panel, "wrap");
-        panelMore=new Panel_More();
+        panelMore = new Panel_More();
         panelMore.setVisible(false);
-        add(panelMore, "dock south.h 0!");
+        add(panelMore, "dock south,h 0!");  //  set height 0
     }
 
     private void eventSend(JIMSendTextPane txt) {
@@ -120,8 +120,8 @@ public class Chat_Bottom extends javax.swing.JPanel {
         }
     }
 
-    private void send(Model_Send_Message data){
-        Service.getInstance().getClient().emit("send_to_user",data.toJsonObject());
+    private void send(Model_Send_Message data) {
+        Service.getInstance().getClient().emit("Wyślij do", data.toJsonObject());
     }
 
     private void refresh() {
@@ -147,5 +147,6 @@ public class Chat_Bottom extends javax.swing.JPanel {
 
     private MigLayout mig;
     private Panel_More panelMore;
+
 
 }

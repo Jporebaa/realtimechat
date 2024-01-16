@@ -12,7 +12,6 @@ public class P_Register extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         lbTitle = new javax.swing.JLabel();
@@ -31,13 +30,13 @@ public class P_Register extends javax.swing.JPanel {
         lbTitle.setFont(new java.awt.Font("sansserif", 0, 30)); // NOI18N
         lbTitle.setForeground(new java.awt.Color(87, 87, 87));
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTitle.setText("Register");
+        lbTitle.setText("Rejestracja");
 
-        jLabel1.setText("User Name");
+        jLabel1.setText("Nazwa użytkownia");
 
-        jLabel2.setText("Password");
+        jLabel2.setText("Hasło");
 
-        cmdRegister.setText("Register");
+        cmdRegister.setText("Zarejestruj");
         cmdRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdRegisterActionPerformed(evt);
@@ -46,7 +45,7 @@ public class P_Register extends javax.swing.JPanel {
 
         cmdBackLogin.setFont(new java.awt.Font("sansserif", 0, 11)); // NOI18N
         cmdBackLogin.setForeground(new java.awt.Color(15, 128, 206));
-        cmdBackLogin.setText("Back Login");
+        cmdBackLogin.setText("Powrót do logowania");
         cmdBackLogin.setContentAreaFilled(false);
         cmdBackLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cmdBackLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -55,7 +54,7 @@ public class P_Register extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setText("Confirm Password");
+        jLabel3.setText("Potwierdź hasło");
 
         lbError.setFont(new java.awt.Font("sansserif", 0, 11)); // NOI18N
         lbError.setForeground(new java.awt.Color(255, 0, 0));
@@ -110,13 +109,13 @@ public class P_Register extends javax.swing.JPanel {
                                 .addComponent(lbError)
                                 .addGap(0, 9, Short.MAX_VALUE))
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void cmdBackLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBackLoginActionPerformed
+    private void cmdBackLoginActionPerformed(java.awt.event.ActionEvent evt) {
         PublicEvent.getInstance().getEventLogin().goLogin();
-    }//GEN-LAST:event_cmdBackLoginActionPerformed
+    }
 
-    private void cmdRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdRegisterActionPerformed
+    private void cmdRegisterActionPerformed(java.awt.event.ActionEvent evt) {
         String userName = txtUser.getText().trim();
         String password = String.valueOf(txtPass.getPassword());
         String confirmPassword = String.valueOf(txtRePassword.getPassword());
@@ -139,10 +138,9 @@ public class P_Register extends javax.swing.JPanel {
                 }
             });
         }
-    }//GEN-LAST:event_cmdRegisterActionPerformed
+    }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cmdBackLogin;
     private javax.swing.JButton cmdRegister;
     private javax.swing.JLabel jLabel1;
@@ -153,5 +151,5 @@ public class P_Register extends javax.swing.JPanel {
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JPasswordField txtRePassword;
     private javax.swing.JTextField txtUser;
-    // End of variables declaration//GEN-END:variables
+
 }

@@ -11,11 +11,13 @@ public class Loading extends javax.swing.JComponent {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         lb = new javax.swing.JLabel();
 
-        lb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/loading.gif")));
+        lb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/loading.gif"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -32,7 +34,7 @@ public class Loading extends javax.swing.JComponent {
                                 .addComponent(lb, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
     @Override
     protected void paintComponent(Graphics grphcs) {
@@ -42,5 +44,7 @@ public class Loading extends javax.swing.JComponent {
         super.paintComponent(grphcs);
     }
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel lb;
+    // End of variables declaration//GEN-END:variables
 }

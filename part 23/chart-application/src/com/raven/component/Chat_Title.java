@@ -35,8 +35,9 @@ public class Chat_Title extends javax.swing.JPanel {
             }
         }
     }
+
     private void statusActive() {
-        lbStatus.setText("Aktywny teraz");
+        lbStatus.setText("Active now");
         lbStatus.setForeground(new java.awt.Color(40, 147, 59));
     }
 
@@ -58,11 +59,11 @@ public class Chat_Title extends javax.swing.JPanel {
 
         lbName.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         lbName.setForeground(new java.awt.Color(66, 66, 66));
-        lbName.setText("Imie");
+        lbName.setText("Name");
         layer.add(lbName);
 
         lbStatus.setForeground(new java.awt.Color(40, 147, 59));
-        lbStatus.setText("Aktywny teraz");
+        lbStatus.setText("Active now");
         layer.add(lbStatus);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

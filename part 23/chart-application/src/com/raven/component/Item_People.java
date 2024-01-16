@@ -49,7 +49,6 @@ public class Item_People extends javax.swing.JPanel {
         });
     }
 
-
     @SuppressWarnings("unchecked")
     private void initComponents() {
 
@@ -68,7 +67,7 @@ public class Item_People extends javax.swing.JPanel {
 
         lbStatus.setFont(new java.awt.Font("sansserif", 2, 12)); // NOI18N
         lbStatus.setForeground(new java.awt.Color(117, 117, 117));
-        lbStatus.setText("Name");
+        lbStatus.setText("New User");
 
         activeStatus.setActive(true);
 

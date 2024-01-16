@@ -37,4 +37,3 @@ public class Model_Emoji {
         return new Model_Emoji(id, new ImageIcon(((ImageIcon) icon).getImage().getScaledInstance(x, y, Image.SCALE_SMOOTH)));
     }
 }
-
