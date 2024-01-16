@@ -5,24 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="obsługa aktywności użytkownika">
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Panel_More.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/Emogi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/emoji/icon/Model_Emoji.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/icon/more_disable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/WrapLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Title.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Title.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Item_People.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventMenuLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventMenuLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ComponentResizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ComponentResizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ImageAvatar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ImageAvatar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpColumnFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpColumnFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpEditorKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpEditorKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpLabelView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane$WarpLabelView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/JIMSendTextPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ModernScrollBarUI$InvisibleScrollBarButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ModernScrollBarUI$InvisibleScrollBarButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ModernScrollBarUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ModernScrollBarUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/PictureBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/PictureBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ProgressCircleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ProgressCircleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ScrollBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/ScrollBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/blurHash/Base83.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/swing/blurHash/Base83.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,37 +142,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;1-updatereadmefile&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/IdeaProjects/realtimechat&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;two.files.diff.last.used.folder&quot;: &quot;C:/Users/jakub/IdeaProjects/Project1/part 12/server&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "1-updatereadmefile",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "C:/Users/Nowy/IdeaProjects/realtimechat/part 23/chart-application/src/com/raven/emoji/icon",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "two.files.diff.last.used.folder": "C:/Users/jakub/IdeaProjects/Project1/part 12/server"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\emoji\icon" />
+      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\icon" />
       <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven" />
       <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server\src" />
       <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server" />
-      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23" />
-      <recent name="C:\Users\jakub\IdeaProjects\realtimechat" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\emoji\icon" />
+      <recent name="C:\Users\Nowy\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\emoji\icon\co" />
       <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23" />
       <recent name="C:\Users\jakub\IdeaProjects\realtimechat" />
       <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 25" />
-      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server" />
-      <recent name="C:\Users\jakub\IdeaProjects\realtimechat\part 23\server\dist" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.raven.event" />
@@ -327,12 +393,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/realtimechat$Main.ic" NAME="Main Coverage Results" MODIFIED="1702396741021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.raven.main.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.raven.main.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/realtimechat$jackson_annotations_2_10_1_jar__1_.ic" NAME="jackson-annotations-2.10.1.jar (1) Coverage Results" MODIFIED="1702644926785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/realtimechat$Main.ic" NAME="Main Coverage Results" MODIFIED="1702396741021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.raven.main.*</FILTER>
-    </SUITE>
   </component>
 </project>
