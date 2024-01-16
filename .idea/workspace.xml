@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Połączenie aplikacji z bazą danych, obsługa logowania">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Receive_Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Send_Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="obsługa aktywności użytkownika">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/event/EventChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Bottom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Title.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Item_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Item_People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventChat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_User_Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_User_Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +265,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705009705491</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="obsługa aktywności użytkownika">
+      <option name="closed" value="true" />
+      <created>1705420572229</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705420572229</updated>
+    </task>
+    <task id="LOCAL-00010" summary="obsługa aktywności użytkownika">
+      <option name="closed" value="true" />
+      <created>1705420578946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705420578946</updated>
+    </task>
+    <task id="LOCAL-00011" summary="obsługa aktywności użytkownika">
+      <option name="closed" value="true" />
+      <created>1705420639169</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705420639169</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,7 +313,8 @@
     <MESSAGE value=" utworzenie i konfiguracja  przestrzeni prowadzania dancyh" />
     <MESSAGE value="Dodanie repozytorium aplikacji serwerowej do pliku README.md" />
     <MESSAGE value="Połączenie aplikacji z bazą danych, obsługa logowania" />
-    <option name="LAST_COMMIT_MESSAGE" value="Połączenie aplikacji z bazą danych, obsługa logowania" />
+    <MESSAGE value="obsługa aktywności użytkownika" />
+    <option name="LAST_COMMIT_MESSAGE" value="obsługa aktywności użytkownika" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

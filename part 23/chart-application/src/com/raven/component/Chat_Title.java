@@ -1,35 +1,36 @@
 package com.raven.component;
 
 import com.raven.model.Model_User_Account;
-
 import java.awt.Color;
 
 public class Chat_Title extends javax.swing.JPanel {
 
-    private Model_User_Account getUser(){
+    public Model_User_Account getUser() {
         return user;
     }
+
     private Model_User_Account user;
 
     public Chat_Title() {
         initComponents();
     }
-    public void setUserName(Model_User_Account user){
+
+    public void setUserName(Model_User_Account user) {
         this.user = user;
         lbName.setText(user.getUserName());
-        if (user.isStatus()){
+        if (user.isStatus()) {
             statusActive();
-        }else {
+        } else {
             setStatusText("Offline");
         }
     }
 
-    public void updateUser(Model_User_Account user){
-        if(this.user == user){
+    public void updateUser(Model_User_Account user) {
+        if (this.user == user) {
             lbName.setText(user.getUserName());
-            if (user.isStatus()){
+            if (user.isStatus()) {
                 statusActive();
-            }else {
+            } else {
                 setStatusText("Offline");
             }
         }
