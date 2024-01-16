@@ -1,8 +1,11 @@
 package com.raven.form;
 
+import com.raven.model.Model_User_Account;
 import net.miginfocom.swing.MigLayout;
 
 public class Home extends javax.swing.JLayeredPane {
+
+    private Chat chat;
 
     public Home() {
         initComponents();
@@ -12,10 +15,20 @@ public class Home extends javax.swing.JLayeredPane {
     private void init() {
         setLayout(new MigLayout("fillx, filly", "0[200!]5[fill, 100%]5[200!]0", "0[fill]0"));
         this.add(new Menu_Left());
-        this.add(new Chat());
+        Chat chat = new Chat();
+        this.add(chat);
         this.add(new Menu_Right());
+        chat.setVisible(false);
     }
 
+    public void setUser(Model_User_Account user){
+        chat.setUser(user);
+        chat.setVisible(true);
+    }
+
+    public void updateUser(Model_User_Account user){
+        chat.updateUser(user);
+    }
     @SuppressWarnings("unchecked")
     private void initComponents() {
 

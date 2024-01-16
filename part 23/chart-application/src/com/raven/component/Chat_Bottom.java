@@ -1,6 +1,7 @@
 package com.raven.component;
 
 import com.raven.event.PublicEvent;
+import com.raven.model.Model_User_Account;
 import com.raven.swing.JIMSendTextPane;
 import com.raven.swing.ScrollBar;
 import java.awt.Color;
@@ -17,6 +18,16 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class Chat_Bottom extends javax.swing.JPanel {
+
+    private Model_User_Account getUser() {
+        return user;
+    }
+
+    public void setUser(Model_User_Account user){
+        this.user = user;
+    }
+
+    private Model_User_Account user;
 
     public Chat_Bottom() {
         initComponents();

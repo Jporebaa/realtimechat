@@ -1,5 +1,6 @@
 package com.raven.component;
 
+import com.raven.event.PublicEvent;
 import com.raven.model.Model_User_Account;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
@@ -10,7 +11,7 @@ public class Item_People extends javax.swing.JPanel {
     public Model_User_Account getUser() {
         return user;
     }
-
+    private boolean mouseOver;
     private final Model_User_Account user;
 
     public Item_People(Model_User_Account user) {
@@ -30,14 +31,24 @@ public class Item_People extends javax.swing.JPanel {
             @Override
             public void mouseEntered(MouseEvent me) {
                 setBackground(new Color(230, 230, 230));
+                mouseOver = true;
             }
 
             @Override
             public void mouseExited(MouseEvent me) {
                 setBackground(new Color(242, 242, 242));
+                mouseOver = false;
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent me) {
+                if (mouseOver) {
+                    PublicEvent.getInstance().getEventMain().selectUser(user);
+                }
             }
         });
     }
+
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
