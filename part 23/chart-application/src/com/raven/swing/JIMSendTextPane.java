@@ -1,23 +1,8 @@
 package com.raven.swing;
 
-import java.awt.Color;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.RenderingHints;
-import javax.swing.JTextPane;
-import javax.swing.text.AbstractDocument;
-import javax.swing.text.BoxView;
-import javax.swing.text.ComponentView;
-import javax.swing.text.Element;
-import javax.swing.text.IconView;
-import javax.swing.text.LabelView;
-import javax.swing.text.ParagraphView;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledEditorKit;
-import javax.swing.text.View;
-import javax.swing.text.ViewFactory;
+import javax.swing.*;
+import javax.swing.text.*;
+import java.awt.*;
 
 public class JIMSendTextPane extends JTextPane {
 

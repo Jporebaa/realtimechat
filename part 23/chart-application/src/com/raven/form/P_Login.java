@@ -1,6 +1,7 @@
 package com.raven.form;
 
 import com.raven.event.PublicEvent;
+import com.raven.model.Model_Login;
 
 public class P_Login extends javax.swing.JPanel {
 
@@ -9,6 +10,7 @@ public class P_Login extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         lbTitle = new javax.swing.JLabel();
@@ -21,25 +23,25 @@ public class P_Login extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        lbTitle.setFont(new java.awt.Font("sansserif", 0, 30));
+        lbTitle.setFont(new java.awt.Font("sansserif", 0, 30)); // NOI18N
         lbTitle.setForeground(new java.awt.Color(87, 87, 87));
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTitle.setText("Logowanie");
+        lbTitle.setText("Login");
 
-        jLabel1.setText("Login");
+        jLabel1.setText("User Name");
 
-        jLabel2.setText("Hasło");
+        jLabel2.setText("Password");
 
-        cmdLogin.setText("Zaloguj się");
+        cmdLogin.setText("Login");
         cmdLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdLoginActionPerformed(evt);
             }
         });
 
-        cmdRegister.setFont(new java.awt.Font("sansserif", 0, 11));
+        cmdRegister.setFont(new java.awt.Font("sansserif", 0, 11)); // NOI18N
         cmdRegister.setForeground(new java.awt.Color(15, 128, 206));
-        cmdRegister.setText("Zarejestruj się");
+        cmdRegister.setText("Register");
         cmdRegister.setContentAreaFilled(false);
         cmdRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cmdRegister.addActionListener(new java.awt.event.ActionListener() {
@@ -83,17 +85,18 @@ public class P_Login extends javax.swing.JPanel {
                                 .addComponent(cmdRegister)
                                 .addGap(0, 86, Short.MAX_VALUE))
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
-    private void cmdRegisterActionPerformed(java.awt.event.ActionEvent evt) {
+    private void cmdRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdRegisterActionPerformed
         PublicEvent.getInstance().getEventLogin().goRegister();
-    }
+    }//GEN-LAST:event_cmdRegisterActionPerformed
 
-    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {
-        PublicEvent.getInstance().getEventLogin().login();
-    }
+    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLoginActionPerformed
+        PublicEvent.getInstance().getEventLogin().login(new Model_Login(txtUser.getText(), String.valueOf(txtPass.getPassword())));
+    }//GEN-LAST:event_cmdLoginActionPerformed
 
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cmdLogin;
     private javax.swing.JButton cmdRegister;
     private javax.swing.JLabel jLabel1;
@@ -101,4 +104,5 @@ public class P_Login extends javax.swing.JPanel {
     private javax.swing.JLabel lbTitle;
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
+    // End of variables declaration//GEN-END:variables
 }

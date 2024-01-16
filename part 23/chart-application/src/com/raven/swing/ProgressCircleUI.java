@@ -1,19 +1,11 @@
 package com.raven.swing;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Insets;
-import java.awt.RenderingHints;
-import java.awt.Shape;
+import javax.swing.*;
+import javax.swing.plaf.basic.BasicProgressBarUI;
+import java.awt.*;
 import java.awt.geom.Arc2D;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
-import javax.swing.ImageIcon;
-import javax.swing.JComponent;
-import javax.swing.plaf.basic.BasicProgressBarUI;
 
 public class ProgressCircleUI extends BasicProgressBarUI {
 

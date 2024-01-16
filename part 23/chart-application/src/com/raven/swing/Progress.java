@@ -1,6 +1,6 @@
 package com.raven.swing;
 
-import javax.swing.JProgressBar;
+import javax.swing.*;
 
 public class Progress extends JProgressBar {
 

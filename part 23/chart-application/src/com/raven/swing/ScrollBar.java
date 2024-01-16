@@ -1,8 +1,7 @@
 package com.raven.swing;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import javax.swing.JScrollBar;
+import javax.swing.*;
+import java.awt.*;
 
 public class ScrollBar extends JScrollBar {
 

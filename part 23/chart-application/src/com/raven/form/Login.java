@@ -1,7 +1,14 @@
 package com.raven.form;
 
 import com.raven.event.EventLogin;
+import com.raven.event.EventMessage;
 import com.raven.event.PublicEvent;
+import com.raven.model.Model_Login;
+import com.raven.model.Model_Message;
+import com.raven.model.Model_Register;
+import com.raven.model.Model_User_Account;
+import com.raven.service.Service;
+import io.socket.client.Ack;
 
 public class Login extends javax.swing.JPanel {
 
@@ -13,25 +20,50 @@ public class Login extends javax.swing.JPanel {
     private void init() {
         PublicEvent.getInstance().addEventLogin(new EventLogin() {
             @Override
-            public void login() {
+            public void login(Model_Login data) {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
                         PublicEvent.getInstance().getEventMain().showLoading(true);
-                        try {
-                            Thread.sleep(300); //  for test
-                        } catch (InterruptedException e) {
-                        }
-                        PublicEvent.getInstance().getEventMain().showLoading(false);
-                        PublicEvent.getInstance().getEventMain().initChat();
-                        setVisible(false);
+                        Service.getInstance().getClient().emit("login", data.toJsonObject(), new Ack() {
+                            @Override
+                            public void call(Object... os) {
+                                if (os.length > 0) {
+                                    boolean action = (Boolean) os[0];
+                                    if (action) {
+                                        Service.getInstance().setUser(new Model_User_Account(os[1]));
+                                        PublicEvent.getInstance().getEventMain().showLoading(false);
+                                        PublicEvent.getInstance().getEventMain().initChat();
+                                    } else {
+                                        //  password wrong
+                                        PublicEvent.getInstance().getEventMain().showLoading(false);
+                                    }
+                                } else {
+                                    PublicEvent.getInstance().getEventMain().showLoading(false);
+                                }
+                            }
+                        });
+
                     }
                 }).start();
             }
 
             @Override
-            public void register() {
-                System.out.println("Rejestracja");
+            public void register(Model_Register data, EventMessage message) {
+                Service.getInstance().getClient().emit("register", data.toJsonObject(), new Ack() {
+                    @Override
+                    public void call(Object... os) {
+                        if (os.length > 0) {
+                            Model_Message ms = new Model_Message((boolean) os[0], os[1].toString());
+                            if (ms.isAction()) {
+                                Model_User_Account user = new Model_User_Account(os[2]);
+                                Service.getInstance().setUser(user);
+                            }
+                            message.callMessage(ms);
+                            //  call message back when done register
+                        }
+                    }
+                });
             }
 
             @Override
@@ -50,6 +82,7 @@ public class Login extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         pic = new com.raven.swing.PictureBox();
@@ -61,7 +94,7 @@ public class Login extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        pic.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/login_image.png")));
+        pic.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/login_image.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(66, 66, 66));
@@ -165,13 +198,15 @@ public class Login extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private com.raven.swing.PictureBox pic;
     private com.raven.swing.PanelSlide slide;
+    // End of variables declaration//GEN-END:variables
 }

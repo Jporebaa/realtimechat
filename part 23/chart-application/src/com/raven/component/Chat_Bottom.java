@@ -1,6 +1,9 @@
 package com.raven.component;
 
 import com.raven.event.PublicEvent;
+import com.raven.model.Model_Send_Message;
+import com.raven.model.Model_User_Account;
+import com.raven.service.Service;
 import com.raven.swing.JIMSendTextPane;
 import com.raven.swing.ScrollBar;
 import java.awt.Color;
@@ -18,10 +21,21 @@ import net.miginfocom.swing.MigLayout;
 
 public class Chat_Bottom extends javax.swing.JPanel {
 
+    private Model_User_Account getUser() {
+        return user;
+    }
+
+    public void setUser(Model_User_Account user){
+        this.user = user;
+    }
+
+    private Model_User_Account user;
+
     public Chat_Bottom() {
         initComponents();
         init();
     }
+
 
     private void init() {
         setLayout(new MigLayout("fillx, filly", "0[fill]0[]0[]2", "2[fill]2"));
@@ -55,7 +69,9 @@ public class Chat_Bottom extends javax.swing.JPanel {
             public void actionPerformed(ActionEvent ae) {
                 String text = txt.getText().trim();
                 if (!text.equals("")) {
-                    PublicEvent.getInstance().getEventChat().sendMessage(text);
+                    Model_Send_Message message=new Model_Send_Message(Service.getInstance().getUser().getUserID(),user.getUserID(),text);
+                    send(message);
+                    PublicEvent.getInstance().getEventChat().sendMessage(message);
                     txt.setText("");
                     txt.grabFocus();
                     refresh();
@@ -66,6 +82,9 @@ public class Chat_Bottom extends javax.swing.JPanel {
         });
         panel.add(cmd);
         add(panel);
+    }
+    private void send(Model_Send_Message data){
+        Service.getInstance().getClient().emit("send_to_user",data.toJsonObject());
     }
 
     private void refresh() {
