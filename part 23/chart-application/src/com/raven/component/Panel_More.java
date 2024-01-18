@@ -1,8 +1,13 @@
 package com.raven.component;
 
+import com.raven.app.MessageType;
 import com.raven.emoji.Emogi;
 import com.raven.emoji.Model_Emoji;
+import com.raven.event.PublicEvent;
 import com.raven.main.Main;
+import com.raven.model.Model_Send_Message;
+import com.raven.model.Model_User_Account;
+import com.raven.service.Service;
 import com.raven.swing.ScrollBar;
 import com.raven.swing.WrapLayout;
 import java.awt.Component;
@@ -19,6 +24,16 @@ import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class Panel_More extends javax.swing.JPanel {
+
+    public Model_User_Account getUser() {
+        return user;
+    }
+
+    public void setUser(Model_User_Account user) {
+        this.user = user;
+    }
+
+    private Model_User_Account user;
 
     public Panel_More() {
         initComponents();
@@ -67,12 +82,7 @@ public class Panel_More extends javax.swing.JPanel {
                 cmd.setSelected(true);
                 panelDetail.removeAll();
                 for (Model_Emoji d : Emogi.getInstance().getStyle1()) {
-                    JButton c = new JButton(d.getIcon());
-                    c.setName(d.getId() + "");
-                    c.setBorder(new EmptyBorder(3, 3, 3, 3));
-                    c.setCursor(new Cursor(Cursor.HAND_CURSOR));
-                    c.setContentAreaFilled(false);
-                    panelDetail.add(c);
+                    panelDetail.add(getButton(d));
                 }
                 panelDetail.repaint();
                 panelDetail.revalidate();
@@ -91,18 +101,34 @@ public class Panel_More extends javax.swing.JPanel {
                 cmd.setSelected(true);
                 panelDetail.removeAll();
                 for (Model_Emoji d : Emogi.getInstance().getStyle2()) {
-                    JButton c = new JButton(d.getIcon());
-                    c.setName(d.getId() + "");
-                    c.setBorder(new EmptyBorder(3, 3, 3, 3));
-                    c.setCursor(new Cursor(Cursor.HAND_CURSOR));
-                    c.setContentAreaFilled(false);
-                    panelDetail.add(c);
+                    panelDetail.add(getButton(d));
                 }
                 panelDetail.repaint();
                 panelDetail.revalidate();
             }
         });
         return cmd;
+    }
+
+    private JButton getButton(Model_Emoji data) {
+        JButton cmd = new JButton(data.getIcon());
+        cmd.setName(data.getId() + "");
+        cmd.setBorder(new EmptyBorder(3, 3, 3, 3));
+        cmd.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        cmd.setContentAreaFilled(false);
+        cmd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                Model_Send_Message message = new Model_Send_Message(MessageType.EMOJI, Service.getInstance().getUser().getUserID(), user.getUserID(), data.getId() + "");
+                sendMessage(message);
+                PublicEvent.getInstance().getEventChat().sendMessage(message);
+            }
+        });
+        return cmd;
+    }
+
+    private void sendMessage(Model_Send_Message data) {
+        Service.getInstance().getClient().emit("send_to_user", data.toJsonObject());
     }
 
     @SuppressWarnings("unchecked")
@@ -131,4 +157,6 @@ public class Panel_More extends javax.swing.JPanel {
     private JPanel panelHeader;
     private JPanel panelDetail;
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
 }

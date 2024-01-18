@@ -1,5 +1,7 @@
 package com.raven.component;
 
+import com.raven.app.MessageType;
+import com.raven.emoji.Emogi;
 import com.raven.model.Model_Receive_Message;
 import com.raven.model.Model_Send_Message;
 import com.raven.swing.ScrollBar;
@@ -24,10 +26,17 @@ public class Chat_Body extends javax.swing.JPanel {
     }
 
     public void addItemLeft(Model_Receive_Message data) {
-        Chat_Left item = new Chat_Left();
-        item.setText(data.getText());
-        item.setTime();
-        body.add(item, "wrap, w 100::80%");
+        if (data.getMessageType() == MessageType.TEXT) {
+            Chat_Left item = new Chat_Left();
+            item.setText(data.getText());
+            item.setTime();
+            body.add(item, "wrap, w 100::80%");
+        } else if (data.getMessageType() == MessageType.EMOJI) {
+            Chat_Left item = new Chat_Left();
+            item.setEmoji(Emogi.getInstance().getImoji(Integer.valueOf(data.getText())).getIcon());
+            item.setTime();
+            body.add(item, "wrap, w 100::80%");
+        }
         repaint();
         revalidate();
     }
@@ -57,12 +66,19 @@ public class Chat_Body extends javax.swing.JPanel {
     }
 
     public void addItemRight(Model_Send_Message data) {
-        Chat_Right item = new Chat_Right();
-        item.setText(data.getText());
-        body.add(item, "wrap, al right, w 100::80%");
+        if (data.getMessageType() == MessageType.TEXT) {
+            Chat_Right item = new Chat_Right();
+            item.setText(data.getText());
+            body.add(item, "wrap, al right, w 100::80%");
+            item.setTime();
+        } else if (data.getMessageType() == MessageType.EMOJI) {
+            Chat_Right item = new Chat_Right();
+            item.setEmoji(Emogi.getInstance().getImoji(Integer.valueOf(data.getText())).getIcon());
+            body.add(item, "wrap, al right, w 100::80%");
+            item.setTime();
+        }
         repaint();
         revalidate();
-        item.setTime();
         scrollToBottom();
     }
 
@@ -91,6 +107,7 @@ public class Chat_Body extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         sp = new javax.swing.JScrollPane();
@@ -124,7 +141,7 @@ public class Chat_Body extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(sp)
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
     private void scrollToBottom() {
         JScrollBar verticalBar = sp.getVerticalScrollBar();
@@ -139,6 +156,8 @@ public class Chat_Body extends javax.swing.JPanel {
         verticalBar.addAdjustmentListener(downScroller);
     }
 
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel body;
     private javax.swing.JScrollPane sp;
+    // End of variables declaration//GEN-END:variables
 }

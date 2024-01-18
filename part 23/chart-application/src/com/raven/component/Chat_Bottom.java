@@ -1,5 +1,6 @@
 package com.raven.component;
 
+import com.raven.app.MessageType;
 import com.raven.event.PublicEvent;
 import com.raven.model.Model_Send_Message;
 import com.raven.model.Model_User_Account;
@@ -28,6 +29,7 @@ public class Chat_Bottom extends javax.swing.JPanel {
 
     public void setUser(Model_User_Account user) {
         this.user = user;
+        panelMore.setUser(user);
     }
 
     private Model_User_Account user;
@@ -48,13 +50,13 @@ public class Chat_Bottom extends javax.swing.JPanel {
             public void keyTyped(KeyEvent ke) {
                 refresh();
                 if (ke.getKeyChar() == 10 && ke.isControlDown()) {
-
+                    //  user press controll + enter
                     eventSend(txt);
                 }
             }
         });
         txt.setBorder(new EmptyBorder(5, 5, 5, 5));
-        txt.setHintText("Napisz wiadomość...");
+        txt.setHintText("Write Message Here ...");
         scroll.setViewportView(txt);
         ScrollBar sb = new ScrollBar();
         sb.setBackground(new Color(229, 229, 229));
@@ -109,7 +111,7 @@ public class Chat_Bottom extends javax.swing.JPanel {
     private void eventSend(JIMSendTextPane txt) {
         String text = txt.getText().trim();
         if (!text.equals("")) {
-            Model_Send_Message message = new Model_Send_Message(Service.getInstance().getUser().getUserID(), user.getUserID(), text);
+            Model_Send_Message message = new Model_Send_Message(MessageType.TEXT, Service.getInstance().getUser().getUserID(), user.getUserID(), text);
             send(message);
             PublicEvent.getInstance().getEventChat().sendMessage(message);
             txt.setText("");
@@ -121,7 +123,7 @@ public class Chat_Bottom extends javax.swing.JPanel {
     }
 
     private void send(Model_Send_Message data) {
-        Service.getInstance().getClient().emit("Wyślij do", data.toJsonObject());
+        Service.getInstance().getClient().emit("send_to_user", data.toJsonObject());
     }
 
     private void refresh() {
@@ -129,6 +131,7 @@ public class Chat_Bottom extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         setBackground(new java.awt.Color(229, 229, 229));
@@ -143,10 +146,11 @@ public class Chat_Bottom extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 40, Short.MAX_VALUE)
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
     private MigLayout mig;
     private Panel_More panelMore;
 
-
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
 }

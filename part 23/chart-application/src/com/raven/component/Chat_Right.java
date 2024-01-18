@@ -31,11 +31,17 @@ public class Chat_Right extends javax.swing.JLayeredPane {
         txt.setFile(fileName, fileSize);
     }
 
+    public void setEmoji(Icon icon) {
+        txt.hideText();
+        txt.setEmoji(true, icon);
+    }
+
     public void setTime() {
         txt.setTime("10:30 PM");    //  Testing
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         txt = new com.raven.component.Chat_Item();
@@ -52,10 +58,10 @@ public class Chat_Right extends javax.swing.JLayeredPane {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.raven.component.Chat_Item txt;
-
+    // End of variables declaration//GEN-END:variables
 }
