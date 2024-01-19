@@ -55,6 +55,7 @@ public class Chat extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -69,8 +70,9 @@ public class Chat extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 681, Short.MAX_VALUE)
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
 
-
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
 }

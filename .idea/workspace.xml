@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Funkcjonalność wysyłania emotek">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_File_Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Package_Sender.java" afterDir="false" />
+    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Funkcjonalność wysyłania obrazów">
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventFileSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Receive_Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Bottom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Right.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Right.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/model/Model_Receive_Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/model/Model_Receive_Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/model/Model_Send_Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/model/Model_Send_Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/app/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/app/MessageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Body.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Item.java" afterDir="false" />
@@ -26,9 +15,9 @@
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Left_With_Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Left_With_Profile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Chat_Right.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Image_Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Image_Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Panel_More.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Panel_More.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Send_Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Send_Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_File_Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_File_Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Receive_Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Receive_Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +89,7 @@
       <recent name="C:\Users\Michal_Mordarski\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\main\icon" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -186,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705612022896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Funkcjonalność wysyłania obrazów">
+      <option name="closed" value="true" />
+      <created>1705651617521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705651617521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,7 +202,8 @@
     <MESSAGE value="Creeate MenuButtons" />
     <MESSAGE value="Wysyłanie zdjęć oraz konfiguracja przestrzeni konwersacji" />
     <MESSAGE value="Funkcjonalność wysyłania emotek" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funkcjonalność wysyłania emotek" />
+    <MESSAGE value="Funkcjonalność wysyłania obrazów" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funkcjonalność wysyłania obrazów" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
