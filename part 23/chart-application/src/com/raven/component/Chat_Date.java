@@ -11,6 +11,7 @@ public class Chat_Date extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
+
     private void initComponents() {
 
         lbDate = new javax.swing.JLabel();

@@ -60,7 +60,7 @@ public class Login extends javax.swing.JPanel {
                                 Service.getInstance().setUser(user);
                             }
                             message.callMessage(ms);
-
+                            //  call message back when done register
                         }
                     }
                 });
@@ -82,6 +82,7 @@ public class Login extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+
     private void initComponents() {
 
         pic = new com.raven.swing.PictureBox();
@@ -206,4 +207,5 @@ public class Login extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel2;
     private com.raven.swing.PictureBox pic;
     private com.raven.swing.PanelSlide slide;
+
 }

@@ -27,11 +27,11 @@ public class P_Login extends javax.swing.JPanel {
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbTitle.setText("Logowanie");
 
-        jLabel1.setText("Nazwa użytkownika");
+        jLabel1.setText("Nazwa");
 
         jLabel2.setText("Hasło");
 
-        cmdLogin.setText("Zaloguj");
+        cmdLogin.setText("Zaloguj się ");
         cmdLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdLoginActionPerformed(evt);
@@ -90,10 +90,9 @@ public class P_Login extends javax.swing.JPanel {
         PublicEvent.getInstance().getEventLogin().goRegister();
     }
 
-    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLoginActionPerformed
+    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {
         PublicEvent.getInstance().getEventLogin().login(new Model_Login(txtUser.getText(), String.valueOf(txtPass.getPassword())));
     }
-
 
 
     private javax.swing.JButton cmdLogin;

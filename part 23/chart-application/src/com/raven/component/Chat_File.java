@@ -13,6 +13,7 @@ public class Chat_File extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
+
     private void initComponents() {
 
         progress1 = new com.raven.swing.Progress();
@@ -25,7 +26,7 @@ public class Chat_File extends javax.swing.JPanel {
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridLayout(2, 1));
 
-        lbFileName.setText("My File Name.file");
+        lbFileName.setText("Moja nazwa pliku");
         jPanel1.add(lbFileName);
 
         lbFileSize.setForeground(new java.awt.Color(7, 98, 153));
@@ -60,4 +61,5 @@ public class Chat_File extends javax.swing.JPanel {
     private javax.swing.JLabel lbFileName;
     private javax.swing.JLabel lbFileSize;
     private com.raven.swing.Progress progress1;
+
 }

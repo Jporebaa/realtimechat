@@ -21,7 +21,7 @@ public class Chat_Title extends javax.swing.JPanel {
         if (user.isStatus()) {
             statusActive();
         } else {
-            setStatusText("Offline");
+            setStatusText("Nieaktywny");
         }
     }
 
@@ -31,13 +31,13 @@ public class Chat_Title extends javax.swing.JPanel {
             if (user.isStatus()) {
                 statusActive();
             } else {
-                setStatusText("Offline");
+                setStatusText("Nieaktywny");
             }
         }
     }
 
     private void statusActive() {
-        lbStatus.setText("Active now");
+        lbStatus.setText("Teraz");
         lbStatus.setForeground(new java.awt.Color(40, 147, 59));
     }
 
@@ -59,11 +59,11 @@ public class Chat_Title extends javax.swing.JPanel {
 
         lbName.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         lbName.setForeground(new java.awt.Color(66, 66, 66));
-        lbName.setText("Name");
+        lbName.setText("Imię");
         layer.add(lbName);
 
         lbStatus.setForeground(new java.awt.Color(40, 147, 59));
-        lbStatus.setText("Active now");
+        lbStatus.setText("Aktywny teraz");
         layer.add(lbStatus);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -85,7 +85,9 @@ public class Chat_Title extends javax.swing.JPanel {
     }
 
 
+
     private javax.swing.JLayeredPane layer;
     private javax.swing.JLabel lbName;
     private javax.swing.JLabel lbStatus;
+
 }

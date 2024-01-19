@@ -3,11 +3,9 @@ package com.raven.form;
 
 public class Menu_Right extends javax.swing.JPanel {
 
-
     public Menu_Right() {
         initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
@@ -25,7 +23,6 @@ public class Menu_Right extends javax.swing.JPanel {
                         .addGap(0, 681, Short.MAX_VALUE)
         );
     }
-
 
 
 }
