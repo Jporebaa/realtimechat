@@ -78,7 +78,7 @@ public class Panel_More extends javax.swing.JPanel {
 
                     @Override
                     public String getDescription() {
-                        return "Image File";
+                        return "Zdjęcie";
                     }
                 });
                 int option = ch.showOpenDialog(Main.getFrames()[0]);
@@ -174,7 +174,6 @@ public class Panel_More extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -187,7 +186,7 @@ public class Panel_More extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 84, Short.MAX_VALUE)
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void clearSelected() {
         for (Component c : panelHeader.getComponents()) {
@@ -204,6 +203,5 @@ public class Panel_More extends javax.swing.JPanel {
     private JPanel panelHeader;
     private JPanel panelDetail;
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    // End of variables declaration//GEN-END:variables
+
 }

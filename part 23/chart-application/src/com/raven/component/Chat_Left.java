@@ -1,5 +1,6 @@
 package com.raven.component;
 
+import com.raven.model.Model_Receive_Image;
 import java.awt.Color;
 import javax.swing.Icon;
 
@@ -20,12 +21,11 @@ public class Chat_Left extends javax.swing.JLayeredPane {
     }
 
     public void setImage(Icon... image) {
-        //  txt.setImage(false, image);
-        //    Update next
+
     }
 
-    public void setImage(String... image) {
-        txt.setImage(false, image);
+    public void setImage(Model_Receive_Image dataImage) {
+        txt.setImage(false, dataImage);
     }
 
     public void setFile(String fileName, String fileSize) {
@@ -42,7 +42,6 @@ public class Chat_Left extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         txt = new com.raven.component.Chat_Item();
@@ -59,10 +58,10 @@ public class Chat_Left extends javax.swing.JLayeredPane {
                                 .addComponent(txt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(0, 0, 0))
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private com.raven.component.Chat_Item txt;
-    // End of variables declaration//GEN-END:variables
+
 }

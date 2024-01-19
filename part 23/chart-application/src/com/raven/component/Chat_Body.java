@@ -36,6 +36,12 @@ public class Chat_Body extends javax.swing.JPanel {
             item.setEmoji(Emogi.getInstance().getImoji(Integer.valueOf(data.getText())).getIcon());
             item.setTime();
             body.add(item, "wrap, w 100::80%");
+        } else if (data.getMessageType() == MessageType.IMAGE) {
+            Chat_Left item = new Chat_Left();
+            item.setText("");
+            item.setImage(data.getDataImage());
+            item.setTime();
+            body.add(item, "wrap, w 100::80%");
         }
         repaint();
         revalidate();
@@ -114,7 +120,6 @@ public class Chat_Body extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         sp = new javax.swing.JScrollPane();
@@ -148,7 +153,7 @@ public class Chat_Body extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(sp)
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void scrollToBottom() {
         JScrollBar verticalBar = sp.getVerticalScrollBar();
@@ -163,8 +168,7 @@ public class Chat_Body extends javax.swing.JPanel {
         verticalBar.addAdjustmentListener(downScroller);
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel body;
     private javax.swing.JScrollPane sp;
-    // End of variables declaration//GEN-END:variables
+
 }

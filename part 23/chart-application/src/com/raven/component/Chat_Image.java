@@ -2,6 +2,7 @@ package com.raven.component;
 
 import com.raven.event.PublicEvent;
 import com.raven.model.Model_File_Sender;
+import com.raven.model.Model_Receive_Image;
 import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -28,14 +29,12 @@ public class Chat_Image extends javax.swing.JLayeredPane {
         add(pic, "wrap");
     }
 
-    public void addImage(String... images) {
-        for (String image : images) {
-            Image_Item pic = new Image_Item();
-            pic.setPreferredSize(new Dimension(200, 200));  //  for test update next
-            pic.setImage(image);
-            //  addEvent(pic, image);
-            add(pic, "wrap");
-        }
+    public void addImage(Model_Receive_Image dataImage) {
+        Image_Item pic = new Image_Item();
+        pic.setPreferredSize(new Dimension(dataImage.getWidth(), dataImage.getHeight()));
+        pic.setImage(dataImage);
+        //  addEvent(pic, image);
+        add(pic, "wrap");
     }
 
     private void addEvent(Component com, Icon image) {
@@ -68,7 +67,6 @@ public class Chat_Image extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -81,9 +79,8 @@ public class Chat_Image extends javax.swing.JLayeredPane {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 300, Short.MAX_VALUE)
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    // End of variables declaration//GEN-END:variables
+
 }

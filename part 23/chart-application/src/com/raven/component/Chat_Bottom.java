@@ -56,7 +56,7 @@ public class Chat_Bottom extends javax.swing.JPanel {
             }
         });
         txt.setBorder(new EmptyBorder(5, 5, 5, 5));
-        txt.setHintText("Write Message Here ...");
+        txt.setHintText("Napisz wiadomość");
         scroll.setViewportView(txt);
         ScrollBar sb = new ScrollBar();
         sb.setBackground(new Color(229, 229, 229));
@@ -131,7 +131,6 @@ public class Chat_Bottom extends javax.swing.JPanel {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         setBackground(new java.awt.Color(229, 229, 229));
@@ -146,11 +145,10 @@ public class Chat_Bottom extends javax.swing.JPanel {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGap(0, 40, Short.MAX_VALUE)
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private MigLayout mig;
     private Panel_More panelMore;
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    // End of variables declaration//GEN-END:variables
+
 }

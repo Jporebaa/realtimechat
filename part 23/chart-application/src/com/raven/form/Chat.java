@@ -72,5 +72,4 @@ public class Chat extends javax.swing.JPanel {
     }
 
 
-
 }

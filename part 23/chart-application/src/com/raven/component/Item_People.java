@@ -63,11 +63,11 @@ public class Item_People extends javax.swing.JPanel {
         imageAvatar1.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/user.png"))); // NOI18N
 
         lb.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        lb.setText("Name");
+        lb.setText("Imię");
 
         lbStatus.setFont(new java.awt.Font("sansserif", 2, 12)); // NOI18N
         lbStatus.setForeground(new java.awt.Color(117, 117, 117));
-        lbStatus.setText("New User");
+        lbStatus.setText("Nowy użytkownik");
 
         activeStatus.setActive(true);
 

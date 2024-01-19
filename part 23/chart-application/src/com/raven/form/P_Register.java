@@ -30,13 +30,13 @@ public class P_Register extends javax.swing.JPanel {
         lbTitle.setFont(new java.awt.Font("sansserif", 0, 30)); // NOI18N
         lbTitle.setForeground(new java.awt.Color(87, 87, 87));
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTitle.setText("Rejestracja");
+        lbTitle.setText("Rejestacja");
 
-        jLabel1.setText("Nazwa użytkownia");
+        jLabel1.setText("Nazwa");
 
         jLabel2.setText("Hasło");
 
-        cmdRegister.setText("Zarejestruj");
+        cmdRegister.setText("Zarejestruj się");
         cmdRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdRegisterActionPerformed(evt);
@@ -139,6 +139,7 @@ public class P_Register extends javax.swing.JPanel {
             });
         }
     }
+
 
 
     private javax.swing.JButton cmdBackLogin;
