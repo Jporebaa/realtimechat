@@ -1,5 +1,6 @@
 package com.raven.component;
 
+import com.raven.model.Model_File_Sender;
 import com.raven.swing.blurHash.BlurHash;
 import java.awt.image.BufferedImage;
 import javax.swing.Icon;
@@ -9,6 +10,10 @@ public class Image_Item extends javax.swing.JLayeredPane {
 
     public Image_Item() {
         initComponents();
+    }
+
+    public void setImage(Icon image, Model_File_Sender fileSender) {
+        pic.setImage(image);
     }
 
     public void setImage(String image) {
@@ -22,13 +27,13 @@ public class Image_Item extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         pic = new com.raven.swing.PictureBox();
         progress1 = new com.raven.swing.Progress();
 
         progress1.setForeground(new java.awt.Color(255, 255, 255));
-        progress1.setValue(50);
         progress1.setProgressType(com.raven.swing.Progress.ProgressType.CANCEL);
 
         pic.setLayer(progress1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -62,11 +67,11 @@ public class Image_Item extends javax.swing.JLayeredPane {
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(pic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
 
-
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.raven.swing.PictureBox pic;
     private com.raven.swing.Progress progress1;
-
+    // End of variables declaration//GEN-END:variables
 }

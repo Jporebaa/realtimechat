@@ -28,7 +28,8 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
     }
 
     public void setImage(Icon... image) {
-        txt.setImage(false, image);
+        // txt.setImage(false, image);
+        //   Update next
     }
 
     public void setImage(String... image) {
@@ -44,6 +45,7 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
     }
 
     @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
@@ -77,11 +79,12 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
 
         add(jLayeredPane1);
         add(txt);
-    }
+    }// </editor-fold>//GEN-END:initComponents
 
 
-
+    // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.raven.swing.ImageAvatar IaImage;
     private javax.swing.JLayeredPane jLayeredPane1;
     private com.raven.component.Chat_Item txt;
+    // End of variables declaration//GEN-END:variables
 }
