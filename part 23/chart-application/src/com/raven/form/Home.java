@@ -1,7 +1,10 @@
 package com.raven.form;
 
+import com.raven.event.PublicEvent;
 import com.raven.model.Model_User_Account;
 import net.miginfocom.swing.MigLayout;
+
+import java.util.Collections;
 
 public class Home extends javax.swing.JLayeredPane {
 
@@ -24,7 +27,12 @@ public class Home extends javax.swing.JLayeredPane {
     public void setUser(Model_User_Account user) {
         chat.setUser(user);
         chat.setVisible(true);
+        PublicEvent.getInstance().getEventChat().loadMessages();
     }
+
+
+
+
 
     public void updateUser(Model_User_Account user) {
         chat.updateUser(user);

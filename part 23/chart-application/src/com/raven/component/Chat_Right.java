@@ -1,7 +1,10 @@
 package com.raven.component;
 
 import com.raven.model.Model_File_Sender;
+import com.raven.model.Model_Receive_Image;
+
 import java.awt.Color;
+import java.sql.Timestamp;
 import javax.swing.Icon;
 
 public class Chat_Right extends javax.swing.JLayeredPane {
@@ -24,6 +27,11 @@ public class Chat_Right extends javax.swing.JLayeredPane {
         txt.setImage(true, fileSender);
     }
 
+    public void setImage(Model_Receive_Image dataImage) {
+        txt.setImage(false, dataImage);
+    }
+
+
     public void setImage(String... image) {
         // txt.setImage(false, image);
     }
@@ -37,8 +45,8 @@ public class Chat_Right extends javax.swing.JLayeredPane {
         txt.setEmoji(true, icon);
     }
 
-    public void setTime() {
-        txt.setTime("10:30 PM");    //  Testing
+    public void setTime(Timestamp date) {
+        txt.setTime(date.toString());
     }
 
     @SuppressWarnings("unchecked")

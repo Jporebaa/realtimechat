@@ -80,7 +80,7 @@ public class Menu_Left extends javax.swing.JPanel {
         //  test data
         menuList.removeAll();
         for (Model_User_Account d : userAccount) {
-            menuList.add(new Item_People(null), "wrap");
+            menuList.add(new Item_People(d), "wrap");
         }
         refreshMenuList();
     }
@@ -88,8 +88,9 @@ public class Menu_Left extends javax.swing.JPanel {
     private void showGroup() {
         //  test data
         menuList.removeAll();
-        for (int i = 0; i < 5; i++) {
-            menuList.add(new Item_People(null), "wrap");
+        for (Model_User_Account d : userAccount) {
+
+            menuList.add(new Item_People(d), "wrap");
         }
         refreshMenuList();
     }
@@ -97,8 +98,8 @@ public class Menu_Left extends javax.swing.JPanel {
     private void showBox() {
         //  test data
         menuList.removeAll();
-        for (int i = 0; i < 10; i++) {
-            menuList.add(new Item_People(null), "wrap");
+        for (Model_User_Account d : userAccount) {
+            menuList.add(new Item_People(d), "wrap");
         }
         refreshMenuList();
     }

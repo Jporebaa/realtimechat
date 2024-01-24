@@ -9,6 +9,8 @@ import java.awt.Adjustable;
 import java.awt.Color;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
+import java.sql.Timestamp;
+import java.util.Date;
 import javax.swing.JScrollBar;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,29 +31,42 @@ public class Chat_Body extends javax.swing.JPanel {
         if (data.getMessageType() == MessageType.TEXT) {
             Chat_Left item = new Chat_Left();
             item.setText(data.getText());
-            item.setTime();
+            if (data.getCreateDate() != null) {
+                item.setTime(data.getCreateDate());
+            } else {
+                item.setTime(new Timestamp(System.currentTimeMillis()));
+            }
             body.add(item, "wrap, w 100::80%");
         } else if (data.getMessageType() == MessageType.EMOJI) {
             Chat_Left item = new Chat_Left();
             item.setEmoji(Emogi.getInstance().getImoji(Integer.valueOf(data.getText())).getIcon());
-            item.setTime();
+            if (data.getCreateDate() != null) {
+                item.setTime(data.getCreateDate());
+            } else {
+                item.setTime(new Timestamp(System.currentTimeMillis()));
+            }
             body.add(item, "wrap, w 100::80%");
-        } else if (data.getMessageType() == MessageType.IMAGE) {
+        } else if (data.getMessageType() == MessageType.IMAGE && data.getDataImage() != null) {
             Chat_Left item = new Chat_Left();
             item.setText("");
             item.setImage(data.getDataImage());
-            item.setTime();
+            if (data.getCreateDate() != null) {
+                item.setTime(data.getCreateDate());
+            } else {
+                item.setTime(new Timestamp(System.currentTimeMillis()));
+            }
             body.add(item, "wrap, w 100::80%");
         }
         repaint();
         revalidate();
+        scrollToBottom();
     }
 
     public void addItemLeft(String text, String user, String[] image) {
         Chat_Left_With_Profile item = new Chat_Left_With_Profile();
         item.setText(text);
         item.setImage(image);
-        item.setTime();
+        item.setTime((Timestamp) new Date());
         item.setUserProfile(user);
         body.add(item, "wrap, w 100::80%");
         //  ::80% set max with 80%
@@ -63,7 +78,7 @@ public class Chat_Body extends javax.swing.JPanel {
         Chat_Left_With_Profile item = new Chat_Left_With_Profile();
         item.setText(text);
         item.setFile(fileName, fileSize);
-        item.setTime();
+        item.setTime((Timestamp) new Date());
         item.setUserProfile(user);
         body.add(item, "wrap, w 100::80%");
         //  ::80% set max with 80%
@@ -75,24 +90,46 @@ public class Chat_Body extends javax.swing.JPanel {
         if (data.getMessageType() == MessageType.TEXT) {
             Chat_Right item = new Chat_Right();
             item.setText(data.getText());
-            item.setTime();
+            item.setTime(new Timestamp(System.currentTimeMillis()));
             body.add(item, "wrap, al right, w 100::80%");
         } else if (data.getMessageType() == MessageType.EMOJI) {
             Chat_Right item = new Chat_Right();
             item.setEmoji(Emogi.getInstance().getImoji(Integer.valueOf(data.getText())).getIcon());
-            item.setTime();
+            item.setTime(new Timestamp(System.currentTimeMillis()));
             body.add(item, "wrap, al right, w 100::80%");
-        } else if (data.getMessageType() == MessageType.IMAGE) {
+        } else if (data.getMessageType() == MessageType.IMAGE && data.getFile() != null) {
             Chat_Right item = new Chat_Right();
             item.setText("");
             item.setImage(data.getFile());
-            item.setTime();
+            item.setTime(new Timestamp(System.currentTimeMillis()));
             body.add(item, "wrap, al right, w 100::80%");
 
         }
         repaint();
         revalidate();
         scrollToBottom();
+    }
+
+    public void addItemRight(Model_Receive_Message data) {
+        if (data.getMessageType() == MessageType.TEXT) {
+            Chat_Right item = new Chat_Right();
+            item.setText(data.getText());
+            item.setTime(data.getCreateDate());
+            body.add(item, "wrap, al right, w 100::80%");
+        } else if (data.getMessageType() == MessageType.EMOJI) {
+            Chat_Right item = new Chat_Right();
+            item.setEmoji(Emogi.getInstance().getImoji(Integer.valueOf(data.getText())).getIcon());
+            item.setTime(data.getCreateDate());
+            body.add(item, "wrap, al right, w 100::80%");
+        } else if (data.getMessageType() == MessageType.IMAGE && data.getDataImage() != null) {
+            Chat_Right item = new Chat_Right();
+            item.setText("");
+            item.setImage(data.getDataImage());
+            item.setTime(data.getCreateDate());
+            body.add(item, "wrap, al right, w 100::80%");
+        }
+        repaint();
+        revalidate();
     }
 
     public void addItemFileRight(String text, String fileName, String fileSize) {
@@ -155,7 +192,7 @@ public class Chat_Body extends javax.swing.JPanel {
         );
     }
 
-    private void scrollToBottom() {
+    public void scrollToBottom() {
         JScrollBar verticalBar = sp.getVerticalScrollBar();
         AdjustmentListener downScroller = new AdjustmentListener() {
             @Override
@@ -170,5 +207,6 @@ public class Chat_Body extends javax.swing.JPanel {
 
     private javax.swing.JPanel body;
     private javax.swing.JScrollPane sp;
+
 
 }

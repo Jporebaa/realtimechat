@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Dopracowanie funkcjonalności wysyłania obrazów">
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/client_data12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/client_data13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/client_data14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/event/EventFileReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_File_Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/model/Model_Reques_File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left_With_Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Left_With_Profile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Right.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Chat_Right.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Image_Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/component/Image_Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Loading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Loading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Right.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/Menu_Right.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/P_Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/form/VIew_Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chart-application5/com/raven/service/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Image_Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/component/Image_Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PictureBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/part 23/chart-application/src/com/raven/swing/PictureBox.java" afterDir="false" />
-    </list>
+    <list default="true" id="34924b11-ad1c-4c8e-92b0-9b326993ea29" name="Changes" comment="Dopracowanie funkcjonalności wysyłania obrazów" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,19 +62,28 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "1-updatereadmefile",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Michal_Mordarski/IdeaProjects/realtimechat",
+    "last_opened_file_path": "C:/Users/Zomsik/IdeaProjects/realtimechat/part 23/chart-application",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michal_Mordarski\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\icon" />
       <recent name="C:\Users\Michal_Mordarski\IdeaProjects\realtimechat\part 23\chart-application\src\com\raven\main\icon" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.raven.model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -126,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.raven.main.Main" />
       <module name="chart-application5" />
       <extension name="coverage">
@@ -177,6 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697869053917</updated>
+      <workItem from="1706036419704" duration="11046000" />
     </task>
     <task id="LOCAL-00001" summary="UpdateReadmeFile">
       <option name="closed" value="true" />
@@ -229,6 +200,9 @@
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -249,6 +223,62 @@
     <MESSAGE value="Funkcjonalność wysyłania obrazów" />
     <MESSAGE value="Dopracowanie funkcjonalności wysyłania obrazów" />
     <option name="LAST_COMMIT_MESSAGE" value="Dopracowanie funkcjonalności wysyłania obrazów" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/P_Register.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/P_Register.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/P_Register.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java</url>
+          <line>207</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Menu_Left.java</url>
+          <line>198</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/part 23/chart-application/src/com/raven/form/Chat.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_swing_chat_application$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1698075769742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

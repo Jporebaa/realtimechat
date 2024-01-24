@@ -2,6 +2,7 @@ package com.raven.component;
 
 import com.raven.model.Model_Receive_Image;
 import java.awt.Color;
+import java.sql.Timestamp;
 import javax.swing.Icon;
 
 public class Chat_Left extends javax.swing.JLayeredPane {
@@ -37,8 +38,8 @@ public class Chat_Left extends javax.swing.JLayeredPane {
         txt.setEmoji(false, icon);
     }
 
-    public void setTime() {
-        txt.setTime("10:30 PM");    //  Testing
+    public void setTime(Timestamp date) {
+        txt.setTime(date.toString());    //  Testing
     }
 
     @SuppressWarnings("unchecked")

@@ -1,6 +1,7 @@
 package com.raven.component;
 
 import java.awt.Color;
+import java.sql.Timestamp;
 import javax.swing.Icon;
 
 public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
@@ -40,8 +41,8 @@ public class Chat_Left_With_Profile extends javax.swing.JLayeredPane {
         txt.setFile(fileName, fileSize);
     }
 
-    public void setTime() {
-        txt.setTime("10:30 PM");    //  Testing
+    public void setTime(Timestamp date) {
+        txt.setTime(date.toString());
     }
 
     @SuppressWarnings("unchecked")

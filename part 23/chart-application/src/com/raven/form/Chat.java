@@ -5,10 +5,13 @@ import com.raven.component.Chat_Bottom;
 import com.raven.component.Chat_Title;
 import com.raven.event.EventChat;
 import com.raven.event.PublicEvent;
-import com.raven.model.Model_Receive_Message;
-import com.raven.model.Model_Send_Message;
-import com.raven.model.Model_User_Account;
+import com.raven.model.*;
+import com.raven.service.Service;
+import io.socket.client.Ack;
 import net.miginfocom.swing.MigLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Chat extends javax.swing.JPanel {
 
@@ -38,6 +41,53 @@ public class Chat extends javax.swing.JPanel {
                     chatBody.addItemLeft(data);
                 }
             }
+
+
+            //List<Model_Receive_Message> data
+
+            @Override
+            public void loadMessages() {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        PublicEvent.getInstance().getEventMain().showLoading(true);
+
+                        Model_All_Messages data = new Model_All_Messages(Service.getInstance().getUser().getUserID(), chatTitle.getUser().getUserID());
+
+                        Service.getInstance().getClient().emit("get_messages", data.toJsonObject(), new Ack() {
+                            @Override
+                            public void call(Object... os) {
+                                if (os.length > 0) {
+
+
+                                    List<Model_Receive_Message> data = new ArrayList<>();
+                                    for (Object o : os) {
+                                        Model_Receive_Message m = new Model_Receive_Message(o);
+                                        data.add(m);
+                                    }
+                                    PublicEvent.getInstance().getEventMain().showLoading(false);
+                                    for (Model_Receive_Message m : data) {
+                                        if (chatTitle.getUser().getUserID() == m.getFromUserID()) {
+                                            chatBody.addItemLeft(m);
+                                        } else {
+                                            chatBody.addItemRight(m);
+                                        }
+                                    }
+                                    chatBody.scrollToBottom();
+
+                                    PublicEvent.getInstance().getEventMain().showLoading(false);
+                                } else {
+                                    PublicEvent.getInstance().getEventMain().showLoading(false);
+                                }
+                            }
+                        });
+
+                    }
+                }).start();
+            }
+
+
+
         });
         add(chatTitle, "wrap");
         add(chatBody, "wrap");

@@ -4,6 +4,8 @@ import com.raven.app.MessageType;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.sql.Timestamp;
+
 public class Model_Receive_Message {
 
     public MessageType getMessageType() {
@@ -38,6 +40,14 @@ public class Model_Receive_Message {
         this.dataImage = dataImage;
     }
 
+    public Timestamp getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Timestamp createDate) {
+        this.createDate = createDate;
+    }
+
     public Model_Receive_Message(Object json) {
         JSONObject obj = (JSONObject) json;
         try {
@@ -46,6 +56,9 @@ public class Model_Receive_Message {
             text = obj.getString("text");
             if (!obj.isNull("dataImage")) {
                 dataImage = new Model_Receive_Image(obj.get("dataImage"));
+            }
+            if (!obj.isNull("createDate")) {
+                createDate = new Timestamp(obj.getLong("createDate"));
             }
         } catch (JSONException e) {
             System.err.println(e);
@@ -56,6 +69,9 @@ public class Model_Receive_Message {
     private int fromUserID;
     private String text;
     private Model_Receive_Image dataImage;
+    private Timestamp createDate;
+
+
 
     public JSONObject toJsonObject() {
         try {
